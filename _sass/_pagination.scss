@@ -1,0 +1,26 @@
+.pagination {
+  overflow: hidden;
+}
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+  //display: block;
+  //padding: 0.5rem;
+  //margin-bottom: 0.5rem;
+  
+  &:first-child {
+    float: left;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+  }
+  
+  &:last-child {
+    float: right;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+  }
+}
+
+a.pagination-item:hover {
+  text-shadow: 0 0 2px #000000;
+}
