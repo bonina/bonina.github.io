@@ -62,8 +62,8 @@ label[for="nav-trigger"] {
   height: 3rem;
   width: 3rem;
   cursor: pointer;
-  background-image: url($baseurl + "/public/touch-icon-iphone.png");
-  background-size: contain;
+  /*background-image: url($baseurl + "/public/touch-icon-iphone.png");
+  background-size: contain;*/
   
   /* logo animation */
   animation-duration: 1.5s;
@@ -121,7 +121,38 @@ label[for="nav-trigger"]:hover {
   transition-delay: 0s;
   visibility: visible;
   background: #111;
-}  
+}
+
+#b0 {
+  position: relative;
+  z-index: -1;
+  width: 4rem;
+  height: 4rem;
+  background: #555555;
+  border-radius: 50%  
+}
+
+#b1 {
+  position: absolute;
+  top: .75rem;
+  left: 1.1rem;
+  display: block;
+  width: 1.85rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50% 30% 30% 50% / 0% 50% 50% 0%;
+}
+
+#b2 {
+  position: absolute;
+  bottom: .75rem;
+  left: 1.1rem;
+  display: block;
+  width: 2rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50% 27% 27% 50% / 0% 50% 50% 0%;
+}
 
 body {
   overflow-x: hidden;
