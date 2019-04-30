@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">{% include head.html %}
   <body>
-    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger">
     <span id="b0">
     <span id="b1"></span>
-    <span id="b2"></span></span></input>
-    <label for="nav-trigger">Menu</label>
+    <span id="b2"></span></span></label>
     <ul class="navigation">
       <li class="nav-item"><a href="/">Home</a></li>
       {% for page in site.pages_list %}
