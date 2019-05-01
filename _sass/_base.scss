@@ -39,7 +39,7 @@ a {
   transition: color 0.2s;
 
   // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
+  &:not(.nohover):hover,
   &:focus {
     position: relative;
     top: 1px;
