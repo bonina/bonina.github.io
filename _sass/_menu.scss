@@ -84,7 +84,7 @@ label[for="nav-trigger"]:hover {
   filter:blur(2px);
 }
 
-.nav-trigger:checked ~ label {
+.nav-trigger:checked ~ label, .b0 {
   left: 10rem;
   z-index: 2;
   height: 100%;
