@@ -36,6 +36,7 @@
 }
 
 label[for="nav-trigger"] {
+  visibility: hidden;
   position: fixed;
   left: 0rem;
   top: 0rem;
@@ -101,6 +102,7 @@ label[for="nav-trigger"]:hover {
 }
 
 .b0 {
+  visibility: visible;
   position: fixed;
   left: 1.5rem;
   top: 1.5rem;
