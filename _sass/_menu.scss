@@ -125,12 +125,16 @@ label[for="nav-trigger"]:hover {
 }
 
 .nav-trigger:checked + label {
-  left: 11.5rem;
+  position: fixed;
+  left: 11.5rem; top: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 
 .nav-trigger:checked ~ .wrap {
   left: 10rem;
-  //box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  filter:blur(2px);
 }
 
 .nav-trigger:checked ~ .navigation {
