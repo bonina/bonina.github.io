@@ -46,10 +46,6 @@ label[for="nav-trigger"] {
   cursor: pointer;
 }
 
-label[for="nav-trigger"]:hover {
-  transform: perspective(1000px) rotateX(180deg);
-}
-
 .nav-trigger + label, .wrap {
   transition: left 0.2s;
 }
@@ -111,6 +107,10 @@ label[for="nav-trigger"]:hover {
   
   backface-visibility: visible !important;
   animation-name: flipInX;
+}
+
+.b0:hover {
+  transform: perspective(1000px) rotateX(180deg);
 }
 
 .b1 {
