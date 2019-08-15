@@ -86,6 +86,7 @@ label[for="nav-trigger"]:hover {
 }
 
 .nav-trigger:checked ~ label {
+  visibility: visible;
   left: 10rem;
   z-index: 2;
   height: 100%;
