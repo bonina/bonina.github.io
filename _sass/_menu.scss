@@ -132,7 +132,7 @@ label[for="nav-trigger"]:hover {
 }
 
 .nav-trigger:checked ~ .b0 {
-  left: 10rem;
+  display:none;
 }
 
 body {
