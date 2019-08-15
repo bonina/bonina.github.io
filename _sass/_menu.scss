@@ -130,7 +130,7 @@ label[for="nav-trigger"]:hover {
   border-radius: 50% 20% 20% 50% / 0% 50% 50% 0%;
 }
 
-.nav-trigger:checked ~ .b0 {
+.nav-trigger:checked .b0 {
   left: 1.5rem;
 }
 
