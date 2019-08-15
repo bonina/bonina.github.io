@@ -89,6 +89,7 @@ label[for="nav-trigger"]:hover {
   z-index: 2;
   height: 100%;
   width: 100%;
+  visibility:hidden;
 }
 
 .nav-trigger:checked ~ .navigation {
@@ -129,10 +130,6 @@ label[for="nav-trigger"]:hover {
   height: .75rem;
   background-color: white;
   border-radius: 50% 20% 20% 50% / 0% 50% 50% 0%;
-}
-
-.b0::after {
-  left: 11rem;
 }
 
 body {
