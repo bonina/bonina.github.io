@@ -100,10 +100,6 @@ label[for="nav-trigger"]:hover {
   background: #3d3d3d;
 }
 
-.nav-trigger:checked ~ #b0 {
-  left: 1.5rem;
-}
-
 #b0 {
   position: absolute;
   width: 3rem;
@@ -132,6 +128,10 @@ label[for="nav-trigger"]:hover {
   height: .75rem;
   background-color: white;
   border-radius: 50% 20% 20% 50% / 0% 50% 50% 0%;
+}
+
+.nav-trigger:checked ~ #b0 {
+  left: 1.5rem;
 }
 
 body {
