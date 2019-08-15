@@ -125,9 +125,7 @@ label[for="nav-trigger"]:hover {
 }
 
 .nav-trigger:checked + label {
-  position: fixed;
   left: 11.5rem; top: 0;
-  z-index: 2;
   height: 100%;
   width: 100%;
 }
