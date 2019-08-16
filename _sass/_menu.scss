@@ -9,10 +9,6 @@
   z-index: 0;
   list-style: none;
   background: #3d3d3d;
-  -webkit-transition: visibility 0s, background-color 0s;
-  transition: visibility 0s, background-color 0s;
-  -webkit-transition-delay: 3s;
-  transition-delay: 3s;
   visibility:hidden;
 }
 
@@ -88,6 +84,13 @@ label[for="nav-trigger"] {
   transition-delay: 0s;
   visibility: visible;
   background: #3d3d3d;
+}
+
+.nav-trigger:not(:checked) ~ .navigation {
+  -webkit-transition: visibility 0s, background-color 0s;
+  transition: visibility 0s, background-color 0s;
+  -webkit-transition-delay: 3s;
+  transition-delay: 3s;
 }
 
 .b0 {
