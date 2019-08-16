@@ -5,7 +5,7 @@ title: Tech
 
 {% assign cc = 1 %}
 {% for post in site.categories.Tech limit:20 %}
-  {% if ccle == 1}
+  {% if ccle == 1 or ccle == 2 or ccle == 3 }
       <h1 class="post-title">
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h1>
