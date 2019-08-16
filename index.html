@@ -19,7 +19,8 @@ title: Home
     </div>
       {% assign ncut = 300 %}
       {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
-      {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words }}<a href='{{ post.url }}'> read more</a>
+      {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words }}
+    <a href='{{ post.url }}'> read more</a>
   </article>
   {% endfor %}
 </div>
