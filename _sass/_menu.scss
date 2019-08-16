@@ -50,6 +50,7 @@
 
 label[for="nav-trigger"] {
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
   visibility: hidden;
   position: fixed;
   left: 0rem;
