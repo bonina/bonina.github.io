@@ -6,7 +6,7 @@ title: Health
 {% assign cc = 1 %}
 {% for post in site.categories.Health limit:20 %}
   {% if cc == 1 or cc == 2 or cc == 3 }
-    <h1 class="post-title">
+    <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
       {% assign ncut = 500 %}
@@ -17,7 +17,7 @@ title: Health
     </div>
     {% assign cc = cc | plus: 1 %}
   {% else %}
-    <h1 class="post-title">
+    <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
   {% endif %}
