@@ -1,4 +1,4 @@
-permalink:           /:categories/:short_year/:title/
+permalink:           /:categories/:title/
 
 title:               Bonina
 tagline:             eu
