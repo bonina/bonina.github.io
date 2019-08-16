@@ -108,36 +108,6 @@ label[for="nav-trigger"] {
   height: 3rem;
   background: #555555;
   border-radius: 50%;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  
-    @keyframes flipInX {
-      0% {
-        transform: perspective(3rem) rotateX(90deg);
-      }
-      50% {
-        transform: perspective(3rem) rotateX(-40deg);
-      }
-      70% {
-        transform: perspective(3rem) rotateX(25deg);
-      }
-      85% {
-        transform: perspective(3rem) rotateX(-15deg);
-      }
-      95% {
-        transform: perspective(3rem) rotateX(10deg);
-      }
-      100% {
-        transform: perspective(3rem) rotateX(0deg);
-      }
-    }
-  
-  backface-visibility: visible !important;
-  animation-name: flipInX;
-}
-
-.b0:hover {
-  transform: perspective(1000px) rotateX(180deg);
 }
 
 .b1 {
