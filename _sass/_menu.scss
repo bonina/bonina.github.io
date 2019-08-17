@@ -1,4 +1,6 @@
 .navigation {
+  display: flex;
+  flex-direction: column;
   width: 10rem;
   height: 100vh;
   position: fixed;
@@ -12,7 +14,31 @@
   //visibility:hidden;
 }
 
-.nav-item {
+.nav-item a {
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: #cecece;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+.nav-item-fill {
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+
+.fill-all {
+  height:auto;
+  flex-grow: 1;
+}
+
+
+/*.nav-item {
   width: 10rem;
 }
 
@@ -43,7 +69,7 @@
   height: 90%;
   position: relative;
   bottom: 0;
-}
+}*/
 
 .nav-trigger {
   position: absolute;
