@@ -4,10 +4,9 @@
 
 $baseurl:"{{ site.baseurl }}";
 @import "base";
-@import "type";
-@import "syntax";
 @import "layout";
+@import "menu";
 @import "posts";
 @import "pagination";
+@import "type";
 @import "message";
-@import "menu";
