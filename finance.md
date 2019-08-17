@@ -5,7 +5,7 @@ title: Finance
 
 {% assign cc = 1 %}
 {% for post in site.categories.Finance limit:20 %}
-  {% if cc == 1 or cc == 2 or cc == 3 }
+  {% if cc == 1 or cc == 2 or cc == 3 %}
     <h1>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
