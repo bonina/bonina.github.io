@@ -17,7 +17,7 @@ title: Tech
   </article>
 {% endfor %}
 
-<h1 class="post-title">Other articles</h1>
+<h1 class="page-title">Other articles</h1>
 {% for post in site.categories.Tech limit: 10 offset: 3 %}
   <article class="post">
     <h1 class="post-title">
