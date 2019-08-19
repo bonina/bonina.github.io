@@ -11,6 +11,9 @@ title: Tech
     {% assign ncut = 500 %}
     {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
     {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words }}
+    <div>
+      <a href='{{ post.url }}'>read more</a>
+    </div>
   </article>
 {% endfor %}
 
