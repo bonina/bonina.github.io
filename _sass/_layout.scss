@@ -36,4 +36,6 @@ footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
   float: right;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
