@@ -17,3 +17,6 @@ pages_list:
   Finance: '/finance'
   Health: '/health'
   About: '/about'
+
+plugins:
+  - jekyll-sitemap
