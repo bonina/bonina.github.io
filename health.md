@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Health
+sitemap: false
 ---
 
 {% for post in site.categories.Health limit: 3 %}
