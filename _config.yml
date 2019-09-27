@@ -4,7 +4,6 @@ title:               Bonina
 tagline:             eu
 url:                 https://bonina.eu
 paginate:            3
-baseurl:             "https://bonina.eu"
 
 highlighter: rouge
 
