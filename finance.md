@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Finance
+sitemap: false
 ---
 
 {% for post in site.categories.Finance limit: 3 %}
