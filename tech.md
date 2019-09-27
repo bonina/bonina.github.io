@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tech
+sitemap: false
 ---
 
 {% for post in site.categories.Tech limit: 3 %}
