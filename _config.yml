@@ -2,7 +2,7 @@ permalink:           /:categories/:title/
 
 title:               Bonina
 tagline:             eu
-url:                 https://bonina.eu
+url:                 https://bonina.eu/
 paginate:            3
 
 highlighter: rouge
@@ -12,9 +12,9 @@ sass:
   style:            :compressed
 
 pages_list:
-  Tech: '/tech'
-  Finance: '/finance'
-  Health: '/health'
+  Web: '/web'
+  Software: '/software'
+  Hardware: '/hardware'
   About: '/about'
 
 plugins:
