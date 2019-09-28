@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to disable Service Workers on Chromium based browsers through uBlock
+description: Service Workers may pose risks, with the next steps we can effectively disable them.
 categories: [Web]
 ---
 
