@@ -10,7 +10,7 @@ Just add the following line on uBlock’s <i>“My filters”</i>:
 <p class="message">||$csp=worker-src 'none'</p>
 If you need to exclude/whitelist some particular website from that filtering process(i.e. you need background notifications for that domain), you can specify it using the following format:
 <p class="message">||$csp=worker-src 'none',domain=~whitelistthisdomain.com</p>
-Completely close and reopen your browser. Now, we can successfully discard any existing Service Workers currently on your session. You can see this list by typing:
+Completely close and reopen your browser. The next step is to discard any existing Service Workers previously installed on your session. You can see the current list of Service Workers by typing:
 <p class="message">[chrome/edge/vivaldi/...]://serviceworker-internals/</p>
 Just remove one by one trough the “Unregister” button. 
 That’s it!
