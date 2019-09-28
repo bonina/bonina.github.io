@@ -4,7 +4,7 @@ title: How to disable Service Workers on Chromium based browsers through uBlock
 categories: [Tech]
 ---
 
-The thought of some website installing a Service Worker upon visit makes little sense. This liberal approach poses some risks such as other ports of entry for unknown exploits and unnecessary arbitrary resource consumption. 
+The thought of some website installing a Service Worker upon visit makes little sense. This liberal approach poses risks such as other ports of entry for unknown exploits and unnecessary arbitrary resource consumption. 
 Firefox includes a disable toggle that simply turns off Service Workers globally. Chromium based browsers do not. 
 Fortunately through the extension <a href="https://github.com/gorhill/uBlock">uBlock</a> we can use Content Security Policy(CSP) fetch directives to filter and block Service Worker. 
 Just add the following line on uBlock’s <i>“My filters”</i>:
