@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Use pnputil in Windows to sanitize leftover driver packages
-description: Through pnputil you can obtain a list of packages containing the drivers of the hardware currently present on the system.
+title: Use pnputil in Windows to sanitize old leftover driver packages
+description: Pnputil gives you the possibility to remove old leftover driver packages, improving stability and storage space while preventing further issues.
 categories: [Software]
 ---
 
