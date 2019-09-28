@@ -13,7 +13,7 @@ Calling the unnistall capabilities of the Windows' pnputil tool forces the usage
 To obtain the list of oem\*.inf packages currently present in the system, just run the following command: 
 <p class="message">pnputil /e</p>
 
-Searching for the oem\*.inf files that could be discarded is not always a straightforward task. The bullet proof solution I've found is knowing the installed version numbers beforehand. For instance, if I am updating my graphics card drivers(usually the largest driver packages in a system), I should first obtain the currently intalled drivers' version throught the command center solution of that driver or just by consulting the Device Manager entry correspondent to that hardware. This way you can know which oem\*.inf to uninstall later on. 
+Searching for the oem\*.inf files that could be discarded is not always a straightforward task. The bullet proof solution I've found is knowing the installed version numbers beforehand. For instance, if I am updating my graphics card drivers(usually the largest driver packages in a system), I first obtain the current version through the command center solution of that driver or by consulting the Device Manager entry correspondent to that hardware. This way you can know which oem\*.inf to uninstall later on. 
 To call that routine, you can use the following format(just subtitute [number] with the numeric value of the file): 
 <p class="message">pnputil /delete-driver oem[number].inf /uninstall</p>
 
