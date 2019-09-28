@@ -1,9 +1,10 @@
 permalink:           /:categories/:title/
 
 title:               Bonina
-tagline:             eu
 url:                 https://bonina.eu
 paginate:            3
+
+description: 'Bonina is where you find tips and tutorials about technology'
 
 highlighter: rouge
 
