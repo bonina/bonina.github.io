@@ -6,7 +6,7 @@ categories: [Tech]
 
 The thought of some website installing a Service Worker upon visit makes little sense. This liberal approach poses risks such as other ports of entry for unknown exploits and unnecessary arbitrary resource consumption. 
 Firefox includes a disable toggle that simply turns off Service Workers globally. For Chromium based browsers we need to use external tools to archieve the same effect. Extensions like <a href="https://github.com/gorhill/uBlock">uBlock</a> can use Content Security Policy(CSP) fetch directives to filter and block Service Workers. 
-Just add the following line on uBlock’s <i>“My filters”</i>:
+Just add the following line on uBlock’s “My filters”:
 <p class="message">||$csp=worker-src 'none'</p>
 If you need to exclude some particular website from the filtering process(i.e. you need background notifications for that domain), you can whitelist it using the following format:
 <p class="message">||$csp=worker-src 'none',domain=~whitelistthisdomain.com</p>
