@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Tech
+title: Web
 sitemap: false
 ---
 
-{% for post in site.categories.Tech limit: 3 %}
+{% for post in site.categories.Web limit: 3 %}
   <article class="post-categories">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -19,7 +19,7 @@ sitemap: false
 {% endfor %}
 
 <h1 class="page-title">Other articles</h1>
-{% for post in site.categories.Tech limit: 10 offset: 3 %}
+{% for post in site.categories.Web limit: 10 offset: 3 %}
   <article class="post-categories">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
