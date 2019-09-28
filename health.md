@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Health
+title: Hardware
 sitemap: false
 ---
 
-{% for post in site.categories.Health limit: 3 %}
+{% for post in site.categories.Hardware limit: 3 %}
   <article class="post-categories">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -19,7 +19,7 @@ sitemap: false
 {% endfor %}
 
 <h1 class="page-title">Other articles</h1>
-{% for post in site.categories.Health limit: 10 offset: 3 %}
+{% for post in site.categories.Hardware limit: 10 offset: 3 %}
   <article class="post-categories">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
