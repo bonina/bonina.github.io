@@ -14,7 +14,7 @@ To obtain the list of oem\*.inf packages currently present in the system, just r
 <p class="message">pnputil /e</p>
 
 Searching for the oem\*.inf files that could be discarded is not always a straightforward task. The bullet proof solution I've found is knowing the installed version numbers beforehand. For instance, if I am updating my graphics card drivers(usually the largest driver packages in a system), I first obtain the current version through the command center solution of that driver or by consulting the Device Manager entry correspondent to that hardware. This way I can know which oem\*.inf to uninstall later on by comparing their corresponding versions. 
-To call that routine, you can use the following format(replace [number] with the numeric value of the file): 
-<p class="message">pnputil /delete-driver oem[number].inf /uninstall</p>
+To call that routine, you can use the following format(replace \* with the numeric value of the file): 
+<p class="message">pnputil /delete-driver oem\*.inf /uninstall</p>
 
 You should get the successful outputs on the prompt, and immediately see the improvements in occupied space plus prevention of possible leftover issues. 
