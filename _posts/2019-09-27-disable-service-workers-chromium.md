@@ -15,4 +15,4 @@ Completely close and reopen your browser. The next step is to discard any existi
 Just remove one by one trough the “Unregister” button. 
 That’s it!
 
-<b>Sidenote:</b> There is the possibility of some requests passing over the uBlock's flitering process during browser startup, resulting in the unnatended installation of some Service Workers. To overcome this just toggle the "I am an advanced user" option on uBlock's Settings, click the adjacent spining gears icon, locate the flag <i>suspendTabsUntilReady</i> and change the boolean to <i>yes</i>.
+<b>Sidenote:</b> There is the possibility of some requests passing over the uBlock's flitering process during browser startup, resulting in the unattended installation of some Service Workers. To overcome this just toggle the "I am an advanced user" option on uBlock's Settings, click the adjacent spining gears icon, locate the flag <i>suspendTabsUntilReady</i> and change the boolean to <i>yes</i>.
