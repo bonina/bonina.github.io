@@ -4,8 +4,8 @@ title: How to disable Service Workers on Chromium based browsers through uBlock
 categories: [Tech]
 ---
 
-The thought of some website installing a Service Worker(SW) upon visit, without explicit user acceptance or acknowledgement, makes little sense. Specially considering that 99.9% of the web browsing activity consists of information gathering and content consumpion, where a SW has little to no usefullness. This liberal approach poses risks such as opening a new channel of entry for still undiscovered exploits while contributing to the overall unnecessary arbitrary resource consumption. Disabling them altogether is a sensible approach to undo this. 
-Firefox includes a disable toggle that simply turns off SWs globally. For Chromium based browsers we need to use external tools to archieve the same effect since a native solution is absent. Extensions like <a href="https://github.com/gorhill/uBlock">uBlock</a> can use Content Security Policy(CSP) fetch directives to filter and block SWs. 
+The thought of some website installing a Service Worker(SW) upon visit, without explicit user acceptance or acknowledgement, makes little sense. Specially considering that 99.9% of the web browsing activity consists of information gathering and content consumpion, where a SW has little to no usefullness. This liberal approach poses risks such as opening a new channel of entry for future exploits while contributing to the overall unnecessary arbitrary resource consumption. Disabling them altogether is a sensible approach to undo this. 
+Firefox includes a disable toggle that simply turns off SWs globally. For Chromium based browsers we need to use external tools to achieve the same effect since a native solution is absent. Extensions like <a href="https://github.com/gorhill/uBlock">uBlock</a> can use Content Security Policy(CSP) fetch directives to filter and block SWs. 
 Just add the following line on uBlock’s “My filters”: 
 <p class="message">||$csp=worker-src 'none'</p> 
 If you need to exclude some particular website from the filtering process(i.e. you need background notifications for that domain), you can whitelist it using the following format: 
