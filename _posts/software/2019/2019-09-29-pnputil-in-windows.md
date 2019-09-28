@@ -17,4 +17,4 @@ Searching for the oem\*.inf files that could be discarded is not always a straig
 To call that routine, you can use the following format(replace [number] with the numeric value of the file): 
 <p class="message">pnputil /delete-driver oem[number].inf /uninstall</p>
 
-You should get the successful outputs on the prompt, and immediately see the improvements in occupied space(plus prevention of leftover issues). 
+You should get the successful outputs on the prompt, and immediately see the improvements in occupied space(plus prevention of possible leftover issues). 
