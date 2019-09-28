@@ -2,7 +2,7 @@ permalink:           /:categories/:title/
 
 title:               Bonina
 tagline:             eu
-url:                 https://bonina.eu/
+url:                 https://bonina.eu
 paginate:            3
 
 highlighter: rouge
