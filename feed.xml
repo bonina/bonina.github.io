@@ -17,7 +17,7 @@ layout: null
    <title>{{ post.title | xml_escape }}</title>
    <description>{{ post.description | xml_escape }}</description>
    <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <updated>{{ post.date | %a, %d %b %Y }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
