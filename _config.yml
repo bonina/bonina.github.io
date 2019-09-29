@@ -6,6 +6,8 @@ paginate:            3
 
 description: 'Bonina is where you find tips and tutorials about technology'
 
+timezone: America/New_York
+
 highlighter: rouge
 
 sass:
