@@ -5,8 +5,8 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <description>{{ site.description }}</description>
+ <title>{{ site.title | xml_escape }}</title>
+ <description>{{ site.description | xml_escape }}</description>
  <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
  <link href="{{ site.url }}{{ site.baseurl }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -14,8 +14,8 @@ layout: null
 
  {% for post in site.posts limit:10 %}
  <entry>
-   <title>{{ post.title }}</title>
-   <description>{{ post.description }}</description>
+   <title>{{ post.title | xml_escape }}</title>
+   <description>{{ post.description | xml_escape }}</description>
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
