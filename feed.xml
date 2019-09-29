@@ -11,8 +11,8 @@ layout: null
   <link href="{{ site.url }}/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
-  <icon>/public/favicon.ico</icon>
-  <logo>/public/touch-icon-iphone.png</logo>
+  <icon>{{ site.url }}/public/favicon.ico</icon>
+  <logo>{{ site.url }}/public/touch-icon-iphone.png</logo>
 
   {% for post in site.posts limit:10 %}
   <entry>
@@ -22,11 +22,7 @@ layout: null
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
-    <content type="xhtml">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-        <p>{{ post.content | xml_escape }}</p>
-      </div>
-    </content>
+    <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
 
