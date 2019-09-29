@@ -11,6 +11,8 @@ layout: null
   <link href="{{ site.url }}/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
+  <icon>/public/favicon.ico</icon>
+  <logo>/public/touch-icon-iphone.png</logo>
 
   {% for post in site.posts limit:10 %}
   <entry>
