@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="google" content="notranslate" />
-  <meta name="robots" content="noarchive" />
+  <meta name="robots" {% if page.title == "Web" or page.title == "Software" or page.title == "Hardware" or page.title == "About" %}content="noindex"{% else %}content="noarchive"{% endif %} />
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title == "Home" %}{{ site.title }} &middot; where you find tips and tutorials about technology{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
