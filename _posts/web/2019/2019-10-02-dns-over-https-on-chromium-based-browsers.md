@@ -5,16 +5,20 @@ categories: [Web]
 #date: 2019-10-02
 ---
 
-Browsers of the Chromium family(Google Chrome, new Microsoft Edge, Vivaldi, etc) are now capacable of routing every DNS request to a DNS-over-HTPPS service of your choice, no 3rd party extension required.
+DNS resolution over an encrypted HTTPS connection prevents tampering, eavesdropping and spoofing, greatly enhancing privacy and security between client and public DNS service. It complements DNSSEC to provide end-to-end authenticated DNS lookups.
 
-Just add the DoH address of the service of your choice in the \* below:
+We can discuss the are many caveats of the current centralization of DNS to just a few large companies in the absense of national ISPs engagement in the implementation of their own DoH/DoT solutions, but that's a matter for other time. Any DNS encryption effort right now is very welcome considering the current plain text situation of DNS worldwide.
+
+In the absense of native system wide support on both Windows and macOS, the implementation of this feature is largely dependend on the support of applications. Fortunately browsers of the Chromium family(Google Chrome, new Microsoft Edge, Vivaldi, etc) are now capable of routing every DNS request to a DNS-over-HTPPS service of your choice, no 3rd party extension required.
+
+Just add the DoH address in the \* below:
 
 <p class="message">--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/*/method/POST"</p>
 
-Just keep in mind that you need to substitute each : with %3A and / with %2F.
-I.e. using the Google's public DoH address: 
+Just keep in mind that you need to substitute each . with %2E, : with %3A and / with %2F in that address.
+I.e. using Google's public DoH address: 
 
-<p class="message">--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2Fdns.google%2Fdns-query/method/POST"</p>
+<p class="message">--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2Fdns%2Egoogle%2Fdns-query/method/POST"</p>
 
 or using Cloudflare's public DoH address:
 
