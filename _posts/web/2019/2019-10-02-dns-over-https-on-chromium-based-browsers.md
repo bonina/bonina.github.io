@@ -7,7 +7,7 @@ categories: [Web]
 
 DNS resolution over an encrypted HTTPS connection prevents tampering, eavesdropping and spoofing, greatly enhancing privacy and security between client and public DNS service. It complements DNSSEC to provide end-to-end authenticated DNS lookups.
 
-We can discuss the are many caveats of the current centralization of DNS to just a few large companies in the absense of national ISPs engagement in the implementation of their own DoH/DoT solutions, but that's a matter for other time. Any DNS encryption effort right now is very welcome considering the current plain text situation of DNS worldwide.
+We can discuss the many caveats of the current centralization of DNS in this approach, considering the absense of ISPs' engagement in the intramural implementation of their own DoH/DoT solutions, but that's a matter for other time. Any DNS encryption effort right now is much welcome considering the current plain text situation of DNS worldwide.
 
 In the absense of native system wide support on both Windows and macOS, the implementation of this feature is largely dependend on the support of applications. Fortunately browsers of the Chromium family(Google Chrome, new Microsoft Edge, Vivaldi, etc) are now capable of routing every DNS request to a DNS-over-HTPPS service of your choice, no 3rd party extension required.
 
