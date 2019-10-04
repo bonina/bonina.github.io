@@ -5,8 +5,8 @@ sitemap: false
 ---
 
 {% for post in site.categories.Web limit: 3 %}
-  <article class="post-categories categories-page">
-    <h1 class="post-title">
+  <article class="post-categories">
+    <h1 class="post-title-categories">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
     {% assign ncut = 500 %}
@@ -18,9 +18,9 @@ sitemap: false
   </article>
 {% endfor %}
 
-<h1 class="page-title categories-page">Other articles</h1>
+<h1 class="page-title">Other articles</h1>
 {% for post in site.categories.Web limit: 10 offset: 3 %}
-  <article class="post-categories">
+  <article class="post-title-categories">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
