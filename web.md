@@ -20,8 +20,8 @@ sitemap: false
 
 <h1 class="page-title">Other articles</h1>
 {% for post in site.categories.Web limit: 10 offset: 3 %}
-  <article class="post-title-categories">
-    <h1 class="post-title">
+  <article class="post-categories">
+    <h1 class="post-title-categories">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
   </article>
