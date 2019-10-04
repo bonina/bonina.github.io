@@ -9,7 +9,8 @@
   color: #717171;
   background-color: #f9f9f9;
   overflow-wrap: break-word;
-  word-wrap: break-word;
+  //word-wrap: break-word;
+  word-wrap: anywhere;
   flex-wrap: wrap;
   white-space:normal;
 }
