@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DNS-over-HTTPS(DoH) natively on Chromium based browsers
+title: DNS-over-HTTPS on Chromium based browsers
 categories: [Web]
 #date: 2019-10-02
 ---
