@@ -18,7 +18,7 @@ sitemap: false
   </article>
 {% endfor %}
 
-<h1 class="page-title">Other articles</h1>
+<h1 class="page-title categories">Other articles</h1>
 {% for post in site.categories.Web limit: 10 offset: 3 %}
   <article class="categories">
     <h1 class="post-title-categories">
