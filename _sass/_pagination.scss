@@ -1,6 +1,6 @@
 .pagination {
   overflow: hidden;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 // Pagination items can be `span`s or `a`s
@@ -11,14 +11,14 @@
   
   &:first-child {
     float: left;
-    margin-top:0.4rem;
-    margin-bottom:0.4rem;
+    margin-top:0.1rem;
+    margin-bottom:0.1rem;
   }
   
   &:last-child {
     float: right;
-    margin-top:0.4rem;
-    margin-bottom:0.4rem;
+    margin-top:0.1rem;
+    margin-bottom:0.1rem;
   }
 }
 
