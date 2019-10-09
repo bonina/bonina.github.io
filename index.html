@@ -29,10 +29,10 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">&lang;</a>
+    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">&lang; Older</a>
   {% endif %}
   {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&rang;</a>
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&rang; Newer</a>
   {% else %}
     <span class="pagination-item newer"></span>
   {% endif %}
