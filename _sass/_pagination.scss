@@ -11,17 +11,17 @@
   
   &:first-child {
     float: left;
-    margin-top:0.5rem;
-    margin-bottom:0.5rem;
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
   }
   
   &:last-child {
     float: right;
-    margin-top:0.5rem;
-    margin-bottom:0.5rem;
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
   }
 }
 
-a.pagination-item:hover {
-  text-shadow: 0 0 2px #000000;
-}
+//a.pagination-item:hover {
+//  text-shadow: 0 0 2px #000000;
+//}
