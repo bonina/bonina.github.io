@@ -24,14 +24,14 @@
     float: left;
     margin-top:0.1rem;
     margin-bottom:0.1rem;
-    transform: rotate(90deg);
+    transform: rotate(240deg);
   }
   
   &:last-child {
     float: right;
     margin-top:0.1rem;
     margin-bottom:0.1rem;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
 }
 
