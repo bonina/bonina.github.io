@@ -22,33 +22,33 @@
   
   &:first-child {
     float: left;
-    margin-top:0.1rem;
-    margin-bottom:0.1rem;
-    //transform: rotate(260deg);
+    margin: 0.2rem;
+    //margin-top:0.1rem;
+    //margin-bottom:0.1rem;
   }
   
   &:last-child {
     float: right;
-    margin-top:0.1rem;
-    margin-bottom:0.1rem;
-    //transform: rotate(90deg);
+    margin: 0.2rem;
+    //margin-top:0.1rem;
+    //margin-bottom:0.1rem;
   }
 }
 
 a.right {
-    border: solid #cecece;
+  border: solid #cecece;
   border-width: 0 3px 3px 0;
   //display: inline-block;
-  padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
+  padding: 4.5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
 a.left {
   border: solid #cecece;
   border-width: 0 3px 3px 0;
   //display: inline-block;
-  padding: 3px;
+  padding: 4.5px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
