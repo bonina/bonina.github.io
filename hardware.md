@@ -11,7 +11,7 @@ sitemap: false
     </h1>
     {% assign ncut = 500 %}
     {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
-    {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}<a href='{{ post.url }}'>read more</a>
+    {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}<a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
   </article>
 {% endfor %}
 
