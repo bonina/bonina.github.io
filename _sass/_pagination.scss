@@ -19,6 +19,8 @@
   //border-radius: 2px;
   //margin: 0;
   //margin-top: 0.8rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   
   &:first-child {
     float: left;
