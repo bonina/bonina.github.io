@@ -68,6 +68,11 @@
   margin-right: 0.15rem;
 }
 
+.dothvr {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .dothvr:hover {
   .dot {
     //background: linear-gradient(135deg, rgba(50,50,50,1) 0%,rgba(75,20,20,1) 100%);
