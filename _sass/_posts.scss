@@ -70,5 +70,6 @@
 .dothvr:hover {
   .dot {
     background: linear-gradient(135deg, rgba(50,50,50,1) 0%,rgba(75,20,20,1) 100%);
+    transition:all .2s ease-in-out;
   }
 }
