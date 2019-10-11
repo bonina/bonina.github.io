@@ -51,7 +51,7 @@
   margin-bottom: 0.5rem;
 }
 
-.dot a {
+.dot {
   height: 0.6rem;
   width: 0.6rem;
   margin-right: 0.15rem;
@@ -60,6 +60,6 @@
   display: inline-block;
 } 
 
-.dot a:hover {
+.dot:hover {
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 }
