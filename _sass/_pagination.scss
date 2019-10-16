@@ -44,6 +44,7 @@ a.right {
   padding: 4.5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: transform .2s;
 }
 
 a.left {
@@ -53,6 +54,7 @@ a.left {
   padding: 4.5px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+  transition: transform .2s;
 }
 
 //a.pagination-item:hover {
