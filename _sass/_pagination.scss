@@ -57,10 +57,10 @@ a.left {
   transition: transform .2s;
 }
 
-a.right:hover, a.right:hover {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+a.right:hover, a.left:hover {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
   border: solid #c74438;
 }
 
