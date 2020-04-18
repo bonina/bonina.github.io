@@ -18,6 +18,7 @@ layout: null
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <category term="{% for category in post.categories %}{{category}}{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}"/>
+    <summary>{{ post.description | xml_escape }}</summary>
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
