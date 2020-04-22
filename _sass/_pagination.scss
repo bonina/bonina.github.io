@@ -38,6 +38,7 @@
 }
 
 a.right {
+  height: 24px;
   border: solid #cecece;
   border-width: 0 2px 2px 0;
   //display: inline-block;
@@ -48,6 +49,7 @@ a.right {
 }
 
 a.left {
+  height: 24px;
   border: solid #cecece;
   border-width: 0 2px 2px 0;
   //display: inline-block;
@@ -58,7 +60,7 @@ a.left {
 }
 
 a.right:hover, a.left:hover {
-  max-height: 8px;
+  //max-height: 8px;
   -ms-transform: scale(1.25);
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
