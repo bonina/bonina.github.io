@@ -38,8 +38,8 @@
 }
 
 a.right {
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
   border: solid #cecece;
   border-width: 0 0.15rem 0.15rem 0;
   //display: inline-block;
@@ -50,8 +50,8 @@ a.right {
 }
 
 a.left {
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
   border: solid #cecece;
   border-width: 0 0.15rem 0.15rem 0;
   //display: inline-block;
@@ -63,9 +63,9 @@ a.left {
 
 a.right:hover, a.left:hover {
   //max-height: 8px;
-  -ms-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -ms-transform: scale(1.35);
+  -webkit-transform: scale(1.35);
+  transform: scale(1.35);
   border: solid #c74438;
   border-radius: 50%;
   border-width: 0.1rem;
