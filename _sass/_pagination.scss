@@ -39,9 +39,9 @@
 
 a.right {
   border: solid #cecece;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   //display: inline-block;
-  padding: 4.5px;
+  padding: 8px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transition: transform .2s;
@@ -51,16 +51,16 @@ a.left {
   border: solid #cecece;
   border-width: 0 2px 2px 0;
   //display: inline-block;
-  padding: 4.5px;
+  padding: 8px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   transition: transform .2s;
 }
 
 a.right:hover, a.left:hover {
-  //-ms-transform: scale(1.25);
-  //-webkit-transform: scale(1.25);
-  //transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
   border: solid #c74438;
   border-radius: 50%;
 }
