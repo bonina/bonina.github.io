@@ -3,13 +3,23 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-  {% for page in site.pages %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{% for post in site.posts limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
   </url>
-  {% endfor %}
+  <url>
+    <loc>{{ site.url }}/web/</loc>
+    <lastmod>{% for post in site.categories.Web limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/software/</loc>
+    <lastmod>{% for post in site.categories.Software limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>
+    <url>
+    <loc>{{ site.url }}/hardware/</loc>
+    <lastmod>{% for post in site.categories.Hardware limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>
   {% for post in site.posts %}
   {% unless post.published == false %}    
   <url>
