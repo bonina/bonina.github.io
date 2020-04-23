@@ -8,7 +8,7 @@ layout: null
     <loc>{{ site.url }}/</loc>
     <lastmod>{% for post in site.posts limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
   </url>
-  <url>
+  <!---<url>
     <loc>{{ site.url }}/web/</loc>
     <lastmod>{% for post in site.categories.Web limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
   </url>
@@ -19,7 +19,7 @@ layout: null
     <url>
     <loc>{{ site.url }}/hardware/</loc>
     <lastmod>{% for post in site.categories.Hardware limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
-  </url>
+  </url>-->
   {% for post in site.posts %}
   {% unless post.published == false %}    
   <url>
