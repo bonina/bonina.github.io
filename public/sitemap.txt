@@ -1,0 +1,12 @@
+<!--<url>
+    <loc>{{ site.url }}/web/</loc>
+    <lastmod>{% for post in site.categories.Web limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>
+  <url>
+    <loc>{{ site.url }}/software/</loc>
+    <lastmod>{% for post in site.categories.Software limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>
+    <url>
+    <loc>{{ site.url }}/hardware/</loc>
+    <lastmod>{% for post in site.categories.Hardware limit: 1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</lastmod>
+  </url>-->
