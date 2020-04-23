@@ -20,5 +20,5 @@ pages_list:
   Hardware: '/hardware'
   About: '/about'
 
-plugins:
-  - jekyll-sitemap
+#plugins:
+#  - jekyll-sitemap
