@@ -1,8 +1,8 @@
 <span class="post-categories readtime" style="display:inline" title="Estimated read time">
   {% assign nwords = post.content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
-  {% if nwords < 200 %}
+  {% if nwords < 180 %}
   &middot;&nbsp;estimated read time: 1 min
   {% else %}
-  &middot;&nbsp;estimated read time: {{ nwords | divided_by:100 }} mins
+  &middot;&nbsp;estimated read time: {{ nwords | divided_by:90 }} mins
   {% endif %}
 </span>
