@@ -16,7 +16,7 @@ sitemap: false
       {% for category in post.categories %}
       {{category}}
       {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
+      {% endfor %}{% include readtime.html %}
     </div>
       {% assign ncut = 500 %}
       {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
