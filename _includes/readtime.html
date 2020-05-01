@@ -1,5 +1,5 @@
 <span class="post-categories readtime" style="display:inline" title="Estimated read time">
-  {% if page.url == / %}
+  {% if page.url == "/" %}
   {% assign nwords = content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
   {% else %}
   {% assign nwords = post.content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
