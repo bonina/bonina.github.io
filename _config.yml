@@ -2,7 +2,7 @@ permalink:           /:categories/:title/
 
 title:               Bonina
 url:                 https://bonina.eu
-paginate:            3
+paginate:            4
 
 description: 'Bonina is where you find tips and tutorials about technology'
 
