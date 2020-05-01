@@ -8,7 +8,7 @@ layout: default
       {% for category in page.categories %}
         {{category}}
       {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
+      {% endfor %}{% include readtime.html %}
     </div>
   {{ content }}
 </article>
