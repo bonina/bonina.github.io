@@ -8,8 +8,8 @@
   {% if nwords < 90 %}
   &middot;&nbsp;estimated read time: less than 1 min
   {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
-  &middot;&nbsp;estimated read time: 1 min {{ extract }}
+  &middot;&nbsp;estimated read time: 1 min {{ prl }}
   {% else %}
-  &middot;&nbsp;estimated read time: {{ nwords | divided_by:90 }} mins {{ extract }}
+  &middot;&nbsp;estimated read time: {{ nwords | divided_by:90 }} mins {{ prl }}
   {% endif %}
 </span>
