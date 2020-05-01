@@ -2,7 +2,6 @@
 layout: null
 ---
 
-{% raw %}
 <span class="post-categories readtime" title="Estimated read time">
   {% assign words = content | number_of_words %}
   {% if words < 200 %}
@@ -11,4 +10,3 @@ layout: null
    Estimated read time: {{ words | divided_by:100 }} mins
   {% endif %}
 </span>
-{% endraw %}
