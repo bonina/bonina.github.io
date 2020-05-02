@@ -1,6 +1,6 @@
 <span class="post-categories readtime" style="display:inline" title="Estimated read time">
-  {% assign prl = page.url | slice: 0, 5 %}
-  {% if prl == "/" or prl == "/page" %}
+  {% assign lpth = page.path | split: "/" | last  %}
+  {% if lpth == "index.html" or lpth == "web.md" or lpth == "software.md" or lpth == "hardware.md" %}
   {% assign nwords = post.content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
   {% else %}
   {% assign nwords = content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
@@ -8,8 +8,8 @@
   {% if nwords < 90 %}
   &middot;&nbsp;less than 1 min read
   {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
-  &middot;&nbsp;1 min read {{ page.path }}
+  &middot;&nbsp;1 min read {{ page.path }} {{ lpth }}
   {% else %}
-  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read {{ page.path }}
+  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read {{ page.path }} {{ lpth }}
   {% endif %}
 </span>
