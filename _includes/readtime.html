@@ -8,8 +8,8 @@
   {% if nwords < 90 %}
   &middot;&nbsp;less than 1 min read
   {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
-  &middot;&nbsp;1 min read
+  &middot;&nbsp;1 min read {{ page.path }}
   {% else %}
-  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read
+  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read {{ page.path }}
   {% endif %}
 </span>
