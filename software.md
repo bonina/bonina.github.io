@@ -6,7 +6,7 @@ sitemap: false
 
 {% for post in site.categories.Software limit: 2 %}
   <article class="categories">
-    <h1 class="post-title-categories">
+    <h1 class="post-title-categories" style="margin-bottom: 0rem;">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
     <div class="post-categories" style="margin-top: 0rem;margin-bottom: 0.4rem;">
@@ -18,7 +18,7 @@ sitemap: false
   </article>
 {% endfor %}
 
-<h1 class="page-title categories" style="margin-bottom: 1rem;">More articles</h1>
+<h1 class="page-title categories" style="margin-top: 0.5rem;margin-bottom: 1.5rem;">More articles</h1>
 {% for post in site.categories.Software limit: 10 offset: 2 %}
   <article class="categories-categories">
     <h1 class="post-title">
