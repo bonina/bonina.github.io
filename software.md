@@ -3,6 +3,9 @@ layout: page
 title: Software
 sitemap: false
 ---
+{{ page.category }}
+{{ page.url }}
+{{ page.path }}
 
 {% for post in site.categories.Software limit: 2 %}
   <article class="categories">
