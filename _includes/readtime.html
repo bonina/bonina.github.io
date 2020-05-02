@@ -6,10 +6,10 @@
   {% assign nwords = content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
   {% endif %}
   {% if nwords < 90 %}
-  &middot;&nbsp;estimated read time: less than 1 min
+  &middot;&nbsp;less than 1 min read
   {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
-  &middot;&nbsp;estimated read time: 1 min
+  &middot;&nbsp;1 min read
   {% else %}
-  &middot;&nbsp;estimated read time: {{ nwords | divided_by:90 }} mins
+  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read
   {% endif %}
 </span>
