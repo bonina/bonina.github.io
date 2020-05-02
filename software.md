@@ -9,7 +9,7 @@ sitemap: false
     <h1 class="post-title-categories" style="margin-bottom: 0rem;">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
-    <div class="post-categories" style="margin-top: 0rem;margin-bottom: 0.4rem;">
+    <div class="post-categories" style="margin-top: 0.1rem;margin-bottom: 0.5rem;">
       {% include readtime.html %}
     </div>
     {% assign ncut = 250 %}
