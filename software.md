@@ -9,7 +9,7 @@ sitemap: false
     <h1 class="post-title-categories">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
-    <div class="post-categories" style="margin-top: 0.1rem;margin-bottom: 0.5rem;">
+    <div class="post-categories" style="margin-top: 0rem;margin-bottom: 0.4rem;">
       {% include readtime.html %}
     </div>
     {% assign ncut = 250 %}
@@ -18,7 +18,7 @@ sitemap: false
   </article>
 {% endfor %}
 
-<h1 class="page-title categories">More articles</h1>
+<h1 class="page-title categories" style="margin-bottom: 1rem;">More articles</h1>
 {% for post in site.categories.Software limit: 10 offset: 2 %}
   <article class="categories-categories">
     <h1 class="post-title">
