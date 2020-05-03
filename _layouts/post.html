@@ -12,9 +12,9 @@ layout: default
     </div>
   {{ content }}
 </article>
-<a style="display: inline-block;" href="whatsapp://send?text={{ site.url }}{{ page.url }}"><small>Share on Whatsapp&nbsp;&middot;</small></a>
-<a style="display: inline-block;" href="tg://msg?text={{ site.url }}{{ page.url }}"><small>Share on Telegram&nbsp;&middot;</small></a>
-<a style="display: inline-block;" href="threema://compose?text={{ site.url }}{{ page.url }}"><small>Share on Threema</small></a>
+<a class="post-share post-share-mobile" style=";" href="whatsapp://send?text={{ site.url }}{{ page.url }}"><small>Share on Whatsapp&nbsp;&middot;</small></a>
+<a class="post-share post-share-mobile" style="display: inline-block;" href="tg://msg?text={{ site.url }}{{ page.url }}"><small>Share on Telegram&nbsp;&middot;</small></a>
+<a class="post-share post-share-mobile" style="display: inline-block;" href="threema://compose?text={{ site.url }}{{ page.url }}"><small>Share on Threema</small></a>
 
 <h3>
   <a style="cursor: pointer;" onclick="history.back()"><small>Back to previous page</small></a>
