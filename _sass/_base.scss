@@ -23,6 +23,9 @@ html {
 
   @media (min-width: 40em) {
     font-size: 18px;
+    .post-share-mobile {
+      display: inline-block;
+    }
   }
 }
 
