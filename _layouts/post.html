@@ -13,11 +13,16 @@ layout: default
   {{ content }}
 </article>
 <span class="post-share"><small>Share on:&nbsp;</small></span>
-<a class="post-share" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"><small>Reddit&nbsp;&middot;</small></a>
+<a class="post-share" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"><small>Reddit</small></a>
+<span class="post-share"><small>&middot;</small></span>
 <a class="post-share" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}"><small>Twitter</small></a>
-<a class="post-share post-share-desktop" href="https://t.me/share/url?url={{ site.url }}{{ page.url }}&text={{ page.title }}"><small>&middot;&nbsp;Telegram</small></a>
-<a class="post-share post-share-mobile" href="whatsapp://send?text={{ site.url }}{{ page.url }}"><small>&middot;&nbsp;Whatsapp&nbsp;&middot;</small></a>
-<a class="post-share post-share-mobile" href="tg://msg?text={{ site.url }}{{ page.url }}"><small>Telegram&nbsp;&middot;</small></a>
+<span class="post-share post-share-desktop"><small>&middot;</small></span>
+<a class="post-share post-share-desktop" href="https://t.me/share/url?url={{ site.url }}{{ page.url }}&text={{ page.title }}"><small>Telegram</small></a>
+<span class="post-share"><small>&middot;</small></span>
+<a class="post-share post-share-mobile" href="whatsapp://send?text={{ site.url }}{{ page.url }}"><small>Whatsapp</small></a>
+<span class="post-share"><small>&middot;</small></span>
+<a class="post-share post-share-mobile" href="tg://msg?text={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
+<span class="post-share"><small>&middot;</small></span>
 <a class="post-share post-share-mobile" href="threema://compose?text={{ site.url }}{{ page.url }}"><small>Threema</small></a>
 
 <h3>
