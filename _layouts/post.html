@@ -13,17 +13,18 @@ layout: default
   {{ content }}
 </article>
 <span class="post-share"><small>Share:&nbsp;</small></span>
-<a class="post-share" href="mailto:?subject={{ page.title }}&body={{ site.url }}{{ page.url }}"><small>EMail</small></a>
+
+<a class="post-share" href="mailto:?subject={{ page.title | url_encode }}&body={{ site.url }}{{ page.url }}"><small>EMail</small></a>
 <span class="post-share"><small>&middot;</small></span>
-<a class="post-share" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"><small>Reddit</small></a>
+<a class="post-share" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}"><small>Reddit</small></a>
 <span class="post-share"><small>&middot;</small></span>
-<a class="post-share" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title }}"><small>Twitter</small></a>
+<a class="post-share" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | url_encode }}"><small>Twitter</small></a>
 <span class="post-share post-share-desktop"><small>&middot;</small></span>
-<a class="post-share post-share-desktop" href="https://t.me/share/url?text={{ page.title }}&url={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
+<a class="post-share post-share-desktop" href="https://t.me/share/url?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
 <span class="post-share post-share-mobile"><small>&middot;</small></span>
 <a class="post-share post-share-mobile" href="whatsapp://send?text={{ site.url }}{{ page.url }}"><small>Whatsapp</small></a>
 <span class="post-share post-share-mobile"><small>&middot;</small></span>
-<a class="post-share post-share-mobile" href="tg://msg?text={{ page.title }}&url={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
+<a class="post-share post-share-mobile" href="tg://msg?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
 <span class="post-share post-share-mobile"><small>&middot;</small></span>
 <a class="post-share post-share-mobile" href="threema://compose?text={{ site.url }}{{ page.url }}"><small>Threema</small></a>
 
