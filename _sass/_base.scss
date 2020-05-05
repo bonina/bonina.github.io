@@ -39,7 +39,7 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
-a {
+a,a:not(.nohoverall) {
   color: #cecece;
   text-decoration: none;
   transition: color 0s;
