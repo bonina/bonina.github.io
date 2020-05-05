@@ -97,3 +97,11 @@
     transition:all .2s ease-in-out;
   }
 }
+
+.nohoverall:after{
+    content:"";
+    padding: 50px;  
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
