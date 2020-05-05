@@ -26,5 +26,25 @@ layout: default
 <a class="post-share post-share-mobile" href="threema://compose?text={{ page.title }}&url={{ site.url }}{{ page.url }}"><small>Threema</small></a>
 
 <h3>
-  <a style="cursor: pointer;" onclick="history.back()"><small>Back to previous page</small></a>
+  <noscript>
+    <style type="text/css">
+        .jsback {display:none;}
+    </style>
+    <a href="/"><small>Back to Home page</small></a>
+  </noscript>
+  <script>
+    function historyBackFallback(fallbackUrl) {
+    fallbackUrl = fallbackUrl || '/';
+    var prevPage = window.location.href;
+
+    history.back();
+
+    setTimeout(function(){ 
+        if (window.location.href == prevPage) {
+            window.location.href = fallbackUrl; 
+        }
+    }, 500);
+    }
+  </script>
+  <a class="jsback" style="cursor: pointer;" onclick="historyBackFallback()"><small>Back to previous page</small></a>
 </h3>
