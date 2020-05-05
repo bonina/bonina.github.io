@@ -99,6 +99,8 @@
 }
 
 .nohoverall::after {
+  content:"";
+  position: absolute;
   padding-top: 10px;
   padding-bottom: 10px;
 }
