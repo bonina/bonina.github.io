@@ -39,8 +39,7 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
-a:not(.nohoverall) {
-  position: relative;
+a:not(.noa) {
   color: #cecece;
   text-decoration: none;
   transition: color 0s;
@@ -60,7 +59,7 @@ a:not(.nohoverall) {
   //}
 }
 
-.nohoverall {
+.noa {
   text-decoration: none;
   color: #888888;
 }
