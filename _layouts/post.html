@@ -23,7 +23,7 @@ layout: default
 <span class="post-share post-share-mobile"><small>&middot;</small></span>
 <a class="post-share post-share-mobile" href="tg://msg?text={{ page.title }}&url={{ site.url }}{{ page.url }}"><small>Telegram</small></a>
 <span class="post-share post-share-mobile"><small>&middot;</small></span>
-<a class="post-share post-share-mobile" href="threema://compose?text={{ page.title }}&url={{ site.url }}{{ page.url }}"><small>Threema</small></a>
+<a class="post-share post-share-mobile" href="threema://compose?text={{ site.url }}{{ page.url }}"><small>Threema</small></a>
 
 <h3>
   <noscript>
@@ -37,7 +37,7 @@ layout: default
     fallbackUrl = fallbackUrl || '/';
     var prevPage = window.location.href;
 
-    history.back();
+    window.history.back();
 
     setTimeout(function(){ 
         if (window.location.href == prevPage) {
