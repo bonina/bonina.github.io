@@ -98,10 +98,6 @@
   }
 }
 
-.nohoverall:after{
-    content:"";
-    padding: 50px;  
-    position: absolute;
-    left: -25px;
-    top: -25px;
+.nohoverall{
+    padding: 20px;  
 }
