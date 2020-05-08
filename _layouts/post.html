@@ -11,7 +11,7 @@ layout: default
       {% endfor %}{% include readtime.html %}
     </div>
   {{ content }}
-</article>{% assign ptitle = page.title | url_encode | replace: "+", "%20" %}
+</article>{% assign ptitle = page.title | url_param_escape %}
 <span class="post-share"><small>Share:&nbsp;</small></span>
 <a class="post-share" href="mailto:?subject={{ ptitle }}&body={{ site.url }}{{ page.url }}"><small>EMail</small></a>
 <span class="post-share"><small>&middot;</small></span>
