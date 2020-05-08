@@ -11,7 +11,7 @@ Albeit apparently unarfull in systems with large amounts of free storage space, 
 
 Fortunately, Windows has a tool that helps us accomplish the task of safely cleaning the system of those files.
 
-So the first step is to run the command line as an administrator. We can opt to run from the Start menu > Windows System > right click in Command Prompt > More > Run as administrator, OR by right clicking in the start button > Command Prompt (Admin). Then just write the following command and argument followed by Enter:
+So the first step is to run the Command Prompt as an administrator. We can opt to run from the Start menu > Windows System > right click in Command Prompt > More > Run as administrator, OR by right clicking in the start button > Command Prompt (Admin). Then just write the following command and argument followed by Enter:
 
 <p class="message">cleanmgr -sageset:1</p>
 
