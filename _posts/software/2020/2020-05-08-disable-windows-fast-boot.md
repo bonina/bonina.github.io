@@ -11,7 +11,7 @@ The fast boot approach introduced back in Windows 8(also present in Windows 10) 
 
 <p class="message">Windows Registry Editor Version 5.00<br>
 <br>
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]<br>
 "HiberbootEnabled"=dword:0</p>
 
 and renaming the file to:
