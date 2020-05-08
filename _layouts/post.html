@@ -13,7 +13,7 @@ layout: default
   {{ content }}
 </article>{% assign htmlsp = " " | url_encode %}
 <span class="post-share"><small>Share:&nbsp;</small></span>
-<a class="post-share" href="mailto:?subject={{ page.title | replace: " ", "%20" | replace: "&", "%26" | replace: "?", "%3F" | replace: "!", "%21" | replace: ",", "%2C" | replace: "'", "%27" }}&body={{ site.url }}{{ page.url }}"><small>EMail</small></a>
+<a class="post-share" href="mailto:?subject={{ page.title | url_encode }}&body={{ site.url }}{{ page.url }}"><small>EMail</small></a>
 <span class="post-share"><small>&middot;</small></span>
 <a class="post-share" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | url_encode }}"><small>Reddit</small></a>
 <span class="post-share"><small>&middot;</small></span>
