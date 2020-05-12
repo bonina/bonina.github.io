@@ -18,6 +18,6 @@ Embedded in the depths of Microsoft's knowledge base, there is a troubleshooter 
 The downside is that in case Microsoft updates that hidden driver in their catalog, it will revert and forcefully overwrite the one already in the system. The only fix to this is to repeat the process of running the troubleshooter package and hide that new driver right after uninstalling it. Only then you should update to the newer graphics driver available in the Intel's Download Center (link below).
 
 [Microsoft's "show or hide updates" troubleshooter package](https://support.microsoft.com/en-us/help/3183922/how-to-temporarily-prevent-a-windows-update-from-reinstalling-in-windo)<br>
-(click on: 'Download Download the "Show or hide updates" troubleshooter package now.')
+<small>(click on: 'Download Download the "Show or hide updates" troubleshooter package now.')</small>
 
 [Intel Download Center (graphics driver updates for HD 615 - Surface Go's iGPU)](https://downloadcenter.intel.com/product/96554/Intel-HD-Graphics-615)
