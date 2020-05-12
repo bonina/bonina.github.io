@@ -13,7 +13,7 @@ Embeded in the depts of the Microsoft's knowledge bases, there is a troubleshoot
 
 The downside is that in case Microsoft updates that hidden driver in their catalog, it will revert and forcefully overwrite the one already in the system. The only fix to this is to repeat the process of running the troubleshooter package and hide that new driver right after unnistalling it. Only then you should update to the newer graphics driver avaliable in the Intel Download Center(link below).
 
-[Microsoft's "show or hide updates" troubleshooter package](https://support.microsoft.com/en-us/help/3183922/how-to-temporarily-prevent-a-windows-update-from-reinstalling-in-windo)
+[Microsoft's "show or hide updates" troubleshooter package](https://support.microsoft.com/en-us/help/3183922/how-to-temporarily-prevent-a-windows-update-from-reinstalling-in-windo)<br>
 (click on: 'Download Download the "Show or hide updates" troubleshooter package now.')
 
 [Intel Download Center(graphics driver updates for HD 615)](https://downloadcenter.intel.com/product/96554/Intel-HD-Graphics-615)
