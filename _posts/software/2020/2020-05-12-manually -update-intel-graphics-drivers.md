@@ -11,7 +11,7 @@ It's staggering that the majority of clients with those devices are still facing
 
 So, not only are they not updating their catalog in a minimally acceptable fashion, but also making it almost unviable to any user that attempts to update those drivers.
 
-Embedded in the depths of Microsoft's knowledge base, there is a troubleshooter package (link below) that makes possible hiding specific driver updates considering an uninstalled initial state, which serves as an workaround to disable the overwrite altogether. In this particular case (Surface Go), just hide these two entries (for other devices it may differ):
+Albeit not perfect, fortunately there is a solution. Embedded in the depths of Microsoft's knowledge base, there is a troubleshooter package (link below) that makes possible hiding specific driver updates considering an uninstalled initial state, which serves as an workaround to disable the overwrite altogether. In this particular case (Surface Go), just hide these two entries (for other devices it may differ):
 
 ![Surface Go hide update entries](/public/download/show-hide-updates.png)
 
