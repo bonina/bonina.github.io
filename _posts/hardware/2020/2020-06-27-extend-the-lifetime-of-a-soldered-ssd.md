@@ -2,7 +2,7 @@
 layout: post
 title: Extend the lifetime of a soldered SSD
 categories: [Hardware]
-published: false
+published: true
 ---
 
 Hard locked, highly integrated devices with practically all components soldered on, go hand in hand with obsolescence. For example, the limited longevity of soldered SSDs is like having a virtual usage stamp on any device that uses them.
