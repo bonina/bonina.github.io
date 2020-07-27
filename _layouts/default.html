@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body>
+<body>{% assign pth = page.path | split: "/" | last  %}
   <input type="checkbox" id="nav-trigger" class="nav-trigger" />
   <label for="nav-trigger">
     <span class="b0">
@@ -10,7 +10,7 @@
   </label>
   <ul class="navigation">
     <li class="nav-item-fill" style="height:6rem;"></li>
-    <li class="nav-item"><a class="nohover" href="/">Home</a></li>
+    {% if pth == "index.html" %}{% else %}<li class="nav-item"><a class="nohover" href="/">Home</a></li>{% endif %}
     {% for page in site.pages_list %}<li class="nav-item"><a class="nohover" href="{{ page[1] }}">{{ page[0] }}</a></li>{% endfor %}
     <li class="nav-item-fill fill-all"></li>
   </ul>
