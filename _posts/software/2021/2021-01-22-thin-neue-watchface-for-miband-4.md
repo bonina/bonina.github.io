@@ -7,6 +7,6 @@ categories: [Software]
 
 Clean watchface with hours, minutes, day of the week, day of the month, number of steps, battery bar and Bluetooth status. Enjoy!
 
-[Download .bin](/public/download/thin-neue-white.bin)
+[Download .bin](/public/download/thin-neue.bin)
 
-![Thin Neue for MiBand 4](/public/download/thin-neue-white.gif)
+![Thin Neue for MiBand 4](/public/download/thin-neue.gif)
