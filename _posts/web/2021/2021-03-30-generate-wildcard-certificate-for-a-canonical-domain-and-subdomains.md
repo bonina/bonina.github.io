@@ -13,7 +13,7 @@ To install certbot, if you don't have it already:
  
 Let’s issue the certificates, just change the example.domain to yours: 
  
-<p class="message">sudo certbot certonly --manual --preferred-challenges=dns -d example.domain -d .*example.domain</p>
+<p class="message">sudo certbot certonly --manual --preferred-challenges=dns -d example.domain -d *.example.domain</p>
 
 Follow the instructions on-screen and be sure that you add the \_acme-challenge.example.domain as a TXT record in your domain’s DNS. Wait a bit before hitting enter to allow your DNS to propagate. If you are too quick, it may fail the challenge. Just repeat the process, a new challenge will be issued.
  
