@@ -46,8 +46,7 @@ harden-dnssec-stripped: yes<br>
 \# Harden against algorithm downgrade when multiple algorithms are advertised in the DS record.<br>
 harden-algo-downgrade: yes<br>
 <br>
-\# Perform additional queries for infrastructure data to harden the referral path. Validates the replies if trust anchors are configured and the zones are                                                                                signed. This enforces DNSSEC validation on<br>
-\# nameserver NS sets and the nameserver addresses that are encountered on the referral path to the answer. Experimental option.<br>
+\# Perform additional queries for infrastructure data to harden the referral path. Validates the replies if trust anchors are configured and the zones are signed. This enforces DNSSEC validation on nameserver NS sets and the nameserver addresses that are encountered on the referral path to the answer. Experimental option.<br>
 harden-referral-path: no<br>
 <br>
 \# Add an unwanted reply threshold to clean the cache and avoid when possible a DNS Poisoning<br>
