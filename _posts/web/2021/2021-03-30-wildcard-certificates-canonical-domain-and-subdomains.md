@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to generate a wildcard certificate for a canonical domain and subdomains using Let’s Encrypt/Certbot
+title: Wildcard certificates using Let’s Encrypt/Certbot - canonical domain and subdomains
 categories: [Web]
 #date: 2021-03-30
 ---
