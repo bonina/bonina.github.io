@@ -15,8 +15,7 @@
   //white-space:normal;
   font-size:small;
   font-family: "Courier New", monospace;
-  line-height:0.7;
-  border-radius: 20px;
+  line-height:0.95;
   
   @supports (background: paint(id)) {
   .message.is-loaded {
