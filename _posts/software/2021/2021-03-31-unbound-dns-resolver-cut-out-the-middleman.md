@@ -5,14 +5,14 @@ categories: [Software]
 #date: 2021-03-31
 ---
 
-Why be exposed to privacy risks by using public DNS servers when you can have your own proper validating, recursive, caching DNS resolver? In the following guide we will install and configure our own instance of a popular DNS resolver. We will use Unbound from NLnet Labs on a Debian based linux distro, but you can use the configuration file across kernels and other supported operating systems.
+Why be exposed to privacy risks by using public DNS servers when you can have your own proper validating, recursive, caching DNS resolver? In the following guide we will install and configure our own instance of a popular DNS resolver. We will use Unbound from NLnet Labs on a Debian based linux distro, but you can use this same configuration file across kernels and other supported operating systems.
  
 To install, open the terminal and paste the following command:
  
 <p class="message">sudo apt install unbound</p>
  
-Some error messages may appear. Since there is no configuration file present, unbound will not be able to start.
-To create an unbound configuration file create "example.conf" in the following directory:
+Some error messages may appear. Since there is no configuration file present, Unbound will not be able to start.
+To create the Unbound configuration file create "example.conf" in the following directory:
  
 <p class="message">/etc/unbound/unbound.conf.d/</p>
  
@@ -89,7 +89,7 @@ Next step will be to pull the root.hints file from the domain authority for the 
  
 <p class="message">sudo service unbound restart</p>
  
-The unbound resolver is now up and running, and will now be able to listen on localhost 127.0.0.1 port 5678. You can change to another IP/port combination in the configuration file.
+The Unbound resolver is now up and running, and will now be able to listen on localhost 127.0.0.1 port 5678. You can change to another IP/port combination in the configuration file.
  
 To make sure that the root.hints file is kept updated (changes rarely and infrequently so around 6 months is quite safe), we can create a cron job that will take care of that for us. Let's create a script that automatizes this process. Just paste the content below in a text editor, like nano, and give it the .sh extension:
  
@@ -112,6 +112,6 @@ Add this line in the end of the prompt/file and save it:
  
 <p class="message">0 4 1 * * sh /home/user/example.sh</p>
  
-These steps will schedule the update of your root.hints at 4 AM every 1st of February and July, and restart the unbound service to apply the changes.
+These steps will schedule the update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
  
 Optional step: Paired with pi-hole or AdGuardHome, you can add an extra layer between you and the resolver, filtering nefarious domains.
