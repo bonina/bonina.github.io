@@ -1,19 +1,22 @@
 ---
 layout: post
-title: Unbound DNS resolver? Cutting the middle man!
+title: Unbound DNS resolver? Cut out the middleman!
 categories: [Software]
 #date: 2021-03-31
 ---
 
-Why not cut the middle man and have your proper validating, recursive, caching DNS resolver? For that we will be considering Unbound from NLnet Labs. The following guide is for Debian based linux distros, but you can use the configuration file across kernels and other supported operating systems.
+Why be exposed to privacy risks by using public DNS servers when you can have your own proper validating, recursive, caching DNS resolver? In the following guide we will install and configure our own instance of a popular DNS resolver. We will use Unbound from NLnet Labs on a Debian based linux distro, but you can use the configuration file across kernels and other supported operating systems.
  
-Open the terminal and call apt to install the unbound package:
+To install, open the terminal and paste the following commmand:
  
-sudo apt install unbound
+<p class="message">sudo apt install unbound</p>
  
-Ignore any error message during install. There is no configuration file present, so unbound will not be able to start.
- 
-Lets create an example.conf file in the directory /etc/unbound/unbound.conf.d/. You can use nano or any other file editor utility to copy the content below:
+Some error messages may appear. Since there is no configuration file present, unbound will not be able to start.
+To create an unbound configuration file create "nameofyourchoosing.conf" in the following directory:
+
+<p class="message">/etc/unbound/unbound.conf.d/</p>
+
+You can use nano or any other file editor utility to copy the content below:
  
 <p class="message">server:<br>
 # If no logfile is specified, syslog is used<br>
@@ -109,17 +112,16 @@ private-address: 10.0.0.0/8<br>
 private-address: fd00::/8<br>
 private-address: fe80::/10</p>
  
-The unbound resolver will be listening on localhost 127.0.0.1 port 5678. You can change it on the top of the configuration file.
- 
+Save it.
 Next step will be to pull the root.hints file from the domain authority for the first time. Execute these two commands:
- 
+
 <p class="message">curl -so /var/lib/unbound/root.hints https://www.internic.net/domain/named.root</p>
- 
+
 <p class="message">sudo service unbound restart</p>
 
-The Ubnound resolver is now up and running.
+The unbound resolver is now up and running, and will now be able to listen on localhost 127.0.0.1 port 5678. You can change to other IP/port combination in the configuration file.
 
-To make sure the root.hints file is updated around every 6 months (infrequently updated, so that period is quite safe), we can create a cron job that will take care of that for us. First let's create a script with the instructions. Just paste the following content in a text editor, like nano, and give it the .sh extension:
+To make sure that the root.hints file is kept updated (changes rarely and infrequently so around 6 months is quite safe), we can create a cron job that will take care of that for us. Let's create a script with that automatizes that process. Just paste the content below in a text editor, like nano, and give it the .sh extension:
 
 <p class="message">#!/bin/bash<br>
 <br>
@@ -127,12 +129,12 @@ test $(date +%m) -eq 2 || test $(date +%m) -eq 7 || exit<br>
 curl -so /var/lib/unbound/root.hints https://www.internic.net/domain/named.root<br>
 service unbound restart</p>
 
-You can place that file in your home folder, or other path of your choice.
-Don’t forget to give permissions to execute:
+You can save that file to your home folder, or any other path of your choosing.
+Don’t forget to give the .sh file permissions to execute:
 
 <p class="message">sudo chmod a+x /home/user/example.sh</p>
 
-Then, let's schedule a task using cron:
+Finally, let's schedule a task using cron:
 
 <p class="message">sudo crontab -e</p>
  
@@ -140,6 +142,6 @@ Add this line in the end of the prompt/file and save it:
  
 <p class="message">0 4 1 * * sh /home/user/example.sh</p>
  
-That will schedule the task of updating root.hints at 4 AM every 1st of February and July, and restart the unbound service.
- 
-Paired with pi-hole or AdGuardHome, it adds a dynamic layer between you and the resolver, filtering nefarious domains.
+These steps will schedule the update of your root.hints at 4 AM every 1st of February and July, and restart the unbound service to apply the changes.
+
+Optional step: Paired with pi-hole or AdGuardHome, you can add an extra layer between you and the resolver, filtering nefarious domains.
