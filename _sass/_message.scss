@@ -15,7 +15,15 @@
   //white-space:normal;
   font-size:small;
   font-family: "Courier New", monospace;
-  border-corner-shape: bevel;
-  border-radius: 5% 0% 0% 5%;
-  line-height:0.8;
+  line-height:0.5;
+  border-radius: 20px;
+  
+  @supports (background: paint(id)) {
+  .message.is-loaded {
+    border-radius: 0;
+    mask-image: paint(corner-shape);
+    --corner-radius: 25px;
+    --corner-shape: bevel;
+  }
+}
 }
