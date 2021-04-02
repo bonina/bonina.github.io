@@ -19,10 +19,10 @@
   border-radius: 0.15em;
   //overflow-x: auto;
   //white-space: pre;
-  overscroll-behavior-block: contain;
+  //overscroll-behavior-block: contain;
   overflow-x: auto; /* Use horizontal scroller if needed */
   white-space: pre-wrap; /* css-3 */
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
-  word-wrap: break-word; /* Internet Explorer 5.5+ */
-  white-space : normal;
+  //word-wrap: break-word; /* Internet Explorer 5.5+ */
+  //white-space : normal;
 }
