@@ -10,6 +10,11 @@ timezone: America/New_York
 
 highlighter: rouge
 
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 sass:
   sass_dir:          _sass
   style:            :compressed
