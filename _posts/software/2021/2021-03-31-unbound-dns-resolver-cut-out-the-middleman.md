@@ -18,7 +18,6 @@ To create the Unbound configuration file create "example.conf" in the following 
  
 You can use nano or any other file editor utility to copy the content below:
 
-{% highlight %}
 <p class="message">server:<br>
 verbosity: 0<br>
 <br>
@@ -82,7 +81,6 @@ private-address: 172.16.0.0/12<br>
 private-address: 10.0.0.0/8<br>
 private-address: fd00::/8<br>
 private-address: fe80::/10</p>
-{% endhighlight %}
  
 Save it.
 Next step will be to pull the root.hints file from the domain authority for the first time. Execute these two commands:
