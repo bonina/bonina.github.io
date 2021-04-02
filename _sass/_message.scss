@@ -20,19 +20,15 @@
   //white-space: pre;
   //overscroll-behavior-block: contain;
   box-sizing: border-box;
-  overflow-x: auto; /* Use horizontal scroller if needed */
-  white-space: pre; /* css-3 */
-  //word-wrap: break-word; /* Internet Explorer 5.5+ */
+  overflow-x: auto;
+  white-space: pre;
+  //word-wrap: break-word;
   //white-space : normal;
   //margin: 0px auto;
   margin-bottom: 1rem;
+  max-width: 42rem;
+  overflow-x: auto;
   //display: flex;
   //flex-wrap: wrap;
   //flex: auto;
-  
-  p {
-    display: inline;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
 }
