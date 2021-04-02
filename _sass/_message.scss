@@ -4,7 +4,6 @@
 // or to a parent if there are multiple elements to show.
 
 .message {
-  margin-bottom: 1rem;
   padding: 0.5rem;
   color: #3d3d3d;
   background-color: #f9f9f9;
@@ -25,5 +24,7 @@
   white-space: pre; /* css-3 */
   //word-wrap: break-word; /* Internet Explorer 5.5+ */
   //white-space : normal;
-  display: inline;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+  width: calc(100% - 20px);
 }
