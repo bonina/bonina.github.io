@@ -1,6 +1,6 @@
 .navigation {
-  display: flex;
-  flex-direction: column;
+//display: flex;
+//flex-direction: column;
   width: 10rem;
   height: 100vh;
   position: fixed;
@@ -17,7 +17,7 @@
 .nav-item {
   width: 10rem;
   display: flex;
-  flex-direction: column;
+//flex-direction: column;
 }
 
 .nav-item a {
@@ -41,7 +41,7 @@
 
 .fill-all {
   height:auto;
-  flex-grow: 1;
+//flex-grow: 1;
 }
 
 
