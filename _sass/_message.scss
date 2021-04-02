@@ -21,7 +21,7 @@
   //overscroll-behavior-block: contain;
   box-sizing: border-box;
   overflow-x: auto; /* Use horizontal scroller if needed */
-  white-space: pre; /* css-3 */
+  //white-space: pre; /* css-3 */
   //word-wrap: break-word; /* Internet Explorer 5.5+ */
   //white-space : normal;
   margin: 0px auto;
@@ -29,4 +29,9 @@
   display: flex;
   flex-wrap: wrap;
   flex: auto;
+  
+  p {
+    display: inline;
+    white-space: pre;
+  }
 }
