@@ -17,5 +17,6 @@
   font-family: "Courier New", monospace;
   line-height:1;
   
-  clip-path: polygon(41rem 0, 42rem 1rem, 42rem 42rem, 0 42rem, 0 0);
+  border-corner-shape: bevel;
+  border-radius: 50% 50% 0% 50%;
 }
