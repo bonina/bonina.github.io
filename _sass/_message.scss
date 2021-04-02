@@ -26,6 +26,7 @@
   //white-space : normal;
   margin: 0px auto;
   margin-bottom: 1rem;
-  width: calc(100% - 20px);
-  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
 }
