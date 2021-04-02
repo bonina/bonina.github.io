@@ -8,12 +8,7 @@ description: 'Bonina is where you find tips and tutorials about technology'
 
 timezone: America/New_York
 
-highlighter: rouge
-
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+#highlighter: rouge
 
 sass:
   sass_dir:          _sass
