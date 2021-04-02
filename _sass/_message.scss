@@ -24,14 +24,15 @@
   //white-space: pre; /* css-3 */
   //word-wrap: break-word; /* Internet Explorer 5.5+ */
   //white-space : normal;
-  margin: 0px auto;
+  //margin: 0px auto;
   margin-bottom: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex: auto;
+  //display: flex;
+  //flex-wrap: wrap;
+  //flex: auto;
   
   p {
     display: inline;
-    white-space: pre;
+    white-space: nowrap;
+    overflow-x: auto;
   }
 }
