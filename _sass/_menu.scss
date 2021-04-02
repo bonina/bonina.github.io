@@ -15,9 +15,9 @@
 }
 
 .nav-item {
-  width: 10rem;
-  height:auto;
-  box-sizing:border-box;
+  width: auto;
+  height: 6rem;
+  box-sizing:content-box;
 //display: flex;
 //flex-direction: column;
 }
