@@ -16,7 +16,7 @@ To create the Unbound configuration file create "example.conf" in the following 
  
 <p class="message">/etc/unbound/unbound.conf.d/</p>
  
-You can use nano or any other file editor utility to copy the content below:
+You can use nano or any other file editor utility to copy and save the content below:
 
 <p class="message">server:<br>
 verbosity: 0<br>
@@ -81,17 +81,16 @@ private-address: 172.16.0.0/12<br>
 private-address: 10.0.0.0/8<br>
 private-address: fd00::/8<br>
 private-address: fe80::/10</p>
- 
-Save it.
-Next step will be to pull the root.hints file from the domain authority for the first time. Execute these two commands:
+
+Next step will be to pull the root.hints file from the domain authority for the first time. Execute these two separate commands:
  
 <p class="message">curl -so /var/lib/unbound/root.hints https://www.internic.net/domain/named.root</p>
  
 <p class="message">sudo service unbound restart</p>
  
-The Unbound resolver is now up and running, and will now be able to listen on localhost 127.0.0.1 port 5678. You can change to another IP/port combination in the configuration file.
+The Unbound resolver is now up and running, and will now listen on localhost 127.0.0.1 port 5678. You can change to another IP/port combination in the configuration file.
  
-To make sure that the root.hints file is kept updated (changes rarely and infrequently so around 6 months is quite safe), we can create a cron job that will take care of that for us. Let's create a script that automatizes this process. Just paste the content below in a text editor, like nano, and give it the .sh extension:
+To make sure that the root.hints file is kept updated (changes rarely and infrequently so around 6 months is quite safe), we can create a cron job that will take care of that for us. Let's use a separate script for customization sake. Paste the content below in a text editor, like nano, and give it the .sh extension:
  
 <p class="message">#!/bin/bash<br>
 <br>
@@ -112,6 +111,6 @@ Add this line in the end of the prompt/file and save it:
  
 <p class="message">0 4 1 * * sh /home/user/example.sh</p>
  
-These steps will schedule the update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
+These steps will schedule an update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
  
 Optional step: Paired with pi-hole or AdGuardHome, you can add an extra layer between you and the resolver, filtering nefarious domains.
