@@ -63,12 +63,15 @@ a.left {
 
 a.right:hover, a.left:hover {
   //max-height: 8px;
-  -ms-transform: scale(1.35);
-  -webkit-transform: scale(1.35);
-  transform: scale(1.35);
-  border: solid #c74438;
-  border-radius: 50%;
-  border-width: 0.1rem;
+  //-ms-transform: scale(1.35);
+  //-webkit-transform: scale(1.35);
+  //transform: scale(1.35);
+  //border: solid #c74438;
+  //border-radius: 50%;
+  //border-width: 0.1rem;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 //a.pagination-item:hover {
