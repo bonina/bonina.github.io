@@ -27,10 +27,10 @@ sitemap: false
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older left" href="{{ paginator.next_page_path | prepend: site.baseurl }}"></a>
+    <a class="pagination-item older left" href="{{ paginator.next_page_path | prepend: site.baseurl }}"><span class="pagl"></span></a>
   {% endif %}
   {% if paginator.previous_page %}
-    <a class="pagination-item newer right" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"></a>
+    <a class="pagination-item newer right" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><span class="pagr"></span></a>
   {% else %}
     <span class="pagination-item newer"></span>
   {% endif %}
