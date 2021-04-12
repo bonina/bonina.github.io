@@ -39,15 +39,15 @@
 
 a.right, a.left {
   position: relative;
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1.6rem;
+  width: 1.6rem;
   border-radius: 50%;
   background: #555555;
 }
 
 .pagr {
   position: absolute;
-  left:0.1rem;
+  left:0.3rem;
   top:0.1rem;
   height: 0.8rem;
   width: 0.8rem;
@@ -64,7 +64,7 @@ a.right, a.left {
 
 .pagl {
   position: absolute;
-  left:0.1rem;
+  right:0.3rem;
   top:0.1rem;
   height: 0.8rem;
   width: 0.8rem;
