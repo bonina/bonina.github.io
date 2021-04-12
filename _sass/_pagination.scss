@@ -37,7 +37,18 @@
   }
 }
 
-a.right {
+a.right, a.left {
+  position: relative;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: #555555;
+}
+
+.pagr {
+  position: absolute;
+  left:0.1rem;
+  top:0.1rem;
   height: 0.8rem;
   width: 0.8rem;
   margin: 0.2rem;
@@ -51,7 +62,10 @@ a.right {
   //transition: transform .2s;
 }
 
-a.left {
+.pagl {
+  position: absolute;
+  left:0.1rem;
+  top:0.1rem;
   height: 0.8rem;
   width: 0.8rem;
   margin: 0.2rem;
@@ -65,7 +79,7 @@ a.left {
   //transition: transform .2s;
 }
 
-a.left:hover {
+.pagl:hover {
   //max-height: 8px;
   //-ms-transform: scale(1.35);
   //-webkit-transform: scale(1.35);
@@ -79,7 +93,7 @@ a.left:hover {
   transition: transform .2s;
 }
 
-a.right:hover {
+.pagr:hover {
   -webkit-transform: rotate(-45deg) scale(1.15);
   -ms-transform: rotate(-45deg) scale(1.15);
   transform: rotate(-45deg) scale(1.15);
