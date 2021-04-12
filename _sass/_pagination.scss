@@ -38,9 +38,9 @@
 }
 
 a.right {
-  height: 0.5rem;
-  width: 0.5rem;
-  //padding: 0.4rem;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0.2rem;
   border: solid #cecece;
   border-width: 0 0.2rem 0.2rem 0;
   //display: inline-block;
@@ -52,9 +52,9 @@ a.right {
 }
 
 a.left {
-  height: 0.6rem;
-  width: 0.6rem;
-  padding: 0.4rem;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0.2rem;
   border: solid #cecece;
   border-width: 0 0.2rem 0.2rem 0;
   //display: inline-block;
@@ -73,16 +73,16 @@ a.left:hover {
   //border: solid #c74438;
   //border-radius: 50%;
   //border-width: 0.1rem;
-  -webkit-transform: rotate(135deg) scale(1.1);
-  -ms-transform: rotate(135deg) scale(1.1);
-  transform: rotate(135deg) scale(1.1);
+  -webkit-transform: rotate(135deg) scale(1.15);
+  -ms-transform: rotate(135deg) scale(1.15);
+  transform: rotate(135deg) scale(1.15);
   transition: transform .2s;
 }
 
 a.right:hover {
-  -webkit-transform: rotate(-45deg) scale(1.1);
-  -ms-transform: rotate(-45deg) scale(1.1);
-  transform: rotate(-45deg) scale(1.1);
+  -webkit-transform: rotate(-45deg) scale(1.15);
+  -ms-transform: rotate(-45deg) scale(1.15);
+  transform: rotate(-45deg) scale(1.15);
   transition: transform .2s;
 }
 
