@@ -48,7 +48,7 @@ a.right {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  transition: transform .2s;
+  //transition: transform .2s;
 }
 
 a.left {
@@ -62,7 +62,7 @@ a.left {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  transition: transform .2s;
+  //transition: transform .2s;
 }
 
 a.left:hover {
@@ -76,12 +76,14 @@ a.left:hover {
   -webkit-transform: rotate(135deg) scale(1.2);
   -ms-transform: rotate(135deg) scale(1.2);
   transform: rotate(135deg) scale(1.2);
+  transition: transform .2s;
 }
 
 a.right:hover {
   -webkit-transform: rotate(-45deg) scale(1.2);
   -ms-transform: rotate(-45deg) scale(1.2);
   transform: rotate(-45deg) scale(1.2);
+  transition: transform .2s;
 }
 
 //a.pagination-item:hover {
