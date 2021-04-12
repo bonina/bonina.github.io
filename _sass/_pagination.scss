@@ -44,8 +44,9 @@ a.right {
   border-width: 0 0.15rem 0.15rem 0;
   //display: inline-block;
   //padding: 8px;
-  transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   transition: transform .2s;
 }
 
@@ -56,8 +57,9 @@ a.left {
   border-width: 0 0.15rem 0.15rem 0;
   //display: inline-block;
   //padding: 8px;
-  transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
   transition: transform .2s;
 }
 
@@ -69,9 +71,9 @@ a.right:hover, a.left:hover {
   //border: solid #c74438;
   //border-radius: 50%;
   //border-width: 0.1rem;
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: rotate(135deg) scale(1.2);
+  -ms-transform: rotate(135deg) scale(1.2);
+  transform: rotate(135deg) scale(1.2);
 }
 
 //a.pagination-item:hover {
