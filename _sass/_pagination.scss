@@ -63,6 +63,7 @@ a.left {
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
   //transition: transform .2s;
+  transition-delay: .2s;
 }
 
 a.left:hover {
