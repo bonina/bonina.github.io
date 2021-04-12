@@ -43,7 +43,9 @@ a.right, a.left {
   width: 1.6rem;
   border-radius: 50%;
   background: #555555;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagr {
