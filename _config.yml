@@ -1,10 +1,10 @@
 permalink:           /:categories/:title/
 
-title:               Bonina
+title:               bonina.eu
 url:                 https://bonina.eu
 paginate:            4
 
-description: 'Bonina is where you find tips and tutorials about technology'
+description: 'where you find tips and tutorials about technology'
 
 timezone: America/New_York
 
