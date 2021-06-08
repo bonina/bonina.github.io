@@ -13,7 +13,11 @@
     {% if pth == "index.html" %}{% else %}<li class="nav-item"><a class="nohover" href="/">Home</a></li>{% endif %}
     {% for page in site.pages_list %}<li class="nav-item"><a class="nohover" href="{{ page[1] }}">{{ page[0] }}</a></li>{% endfor %}
     <li class="nav-item">
-      <input type="text" placeholder="Search.." name="search"><button type="submit"></button>
+      <form method="GET" action="https://www.google.com/search">
+        <input type="hidden" name="as_sitesearch" value="https://bonina.eu">
+        <input type="text" name="q">
+        <input type="submit" value="Search">
+      </form>
     </li>
     <li class="nav-item-fill fill-all"></li>
   </ul>
