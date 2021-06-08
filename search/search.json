@@ -6,11 +6,11 @@ layout: null
 {% for post in site.posts %}
     {% if post.title != null and post.title != empty %}
     {% unless first %},{% endunless %}
-      {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}{
+      {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, '' | number_of_words | decrement %}{
         "title": {{post.title | jsonify}},
         "content": {{ post.content | markdownify | strip_html | strip_newlines | slugify: 'ascii' | replace: '-',' ' | jsonify}},
         "link": "{{ site.baseurl }}{{ post.url }}",
-        "excerpt": {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " | jsonify}},
+        "excerpt": {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, ' ' | jsonify}},
         "search_omit": "{{ post.search_omit }}"
     }
     {% assign first = false %}
