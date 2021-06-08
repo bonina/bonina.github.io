@@ -1,8 +1,7 @@
 ---
 layout: null
 ---
-{% assign ncut = 500 %}
-{% assign first = true %}
+{% assign ncut = 500 %}{% assign first = true %}
 [    
 {% for post in site.posts %}
     {% if post.title != null and post.title != empty %}
