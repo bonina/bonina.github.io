@@ -11,7 +11,7 @@
     Initialisation
     ========================================================================== */
 
-var q, jsonFeedUrl = "/feed.json",
+var q, jsonFeedUrl = "/search/search.json",
     $searchForm = $("[data-search-form]"),
     $searchInput = $("[data-search-input]"),
     $resultTemplate = $("#search-result"),
