@@ -1,15 +1,17 @@
 ---
 layout: null
 ---
+{% assign ncut = 500 %}
 {% assign first = true %}
 [    
 {% for post in site.posts %}
     {% if post.title != null and post.title != empty %}
     {% unless first %},{% endunless %}{
         "title": {{post.title | jsonify}},
-        "content": {{post.content | markdownify | strip_html | jsonify}},
+        "content": {{ post.content | markdownify | strip_html | strip_newlines | slugify: 'ascii' | replace: '-',' ' | jsonify}},
         "link": "{{ site.baseurl }}{{ post.url }}",
-        "excerpt": {{ post.excerpt | smartify | jsonify }},
+        {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
+        "excerpt": {{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}
         "search_omit": "{{ post.search_omit }}"
     }
     {% assign first = false %}
