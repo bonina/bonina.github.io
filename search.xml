@@ -18,16 +18,5 @@ sitemap: false
 		</item>
 		{% endif %}
 	{% endfor %}
-	{% for post in site.pages %}
-		{% if post.layout != "null" %}
-			{% if post.sitemap != false %}
-			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.content | xml_escape }}</description>
-				<link>{{ site.url }}{{ post.url }}</link>
-			</item>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
 </channel>
 </rss>
