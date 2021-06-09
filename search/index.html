@@ -1,13 +1,44 @@
 ---
 layout: default
 title: Search
+search_omit: true
 ---
 
-<h1 style=padding-top:3rem;>Search</h1>
+  <h1 style=padding-top:3rem;>Search</h1>
+
+  <!-- Search form -->
+  <form method="get" action="/search" data-search-form>
+    <label for="q">Search term</label>
+    <input type="search" name="q" id="q" placeholder="Enter search term" data-search-input required />
+    <input type="submit" value="Search" />
+  </form>
+
+  <!-- Search results placeholder -->
+  <p data-search-found>
+    <span style="display:inline;" data-search-found-count></span> result(s) found for &ldquo;<span style="display:inline;" data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results></div>
+
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div style="margin-bottom:2rem;">
+      <a class="noa" href="##Url##"><h1>##Title##</h1>
+      <p>##Excerpt##</a><a class="dothvr" href="##Url##"><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a></p>
+    </div>
+  </script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Search script - Must appear after template -->
+<script src="/search/search.js"></script>
+
+_____
 
 <div class="container">
-  <div class="well" id="searchbox">
-    <input id="search-field" placeholder="Search the Site"/>
-    <ul id="results"></ul>
-  </div>
+	<div class="well" id="searchbox">
+		<input id="search-field" placeholder="Search the Site"/>
+		<ul id="results"></ul>
+	</div>
 </div>
