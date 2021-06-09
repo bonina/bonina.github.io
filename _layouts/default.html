@@ -28,5 +28,13 @@
     </div>
   </span>
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "29e3717b5959431bb25e181a61649eeb"}'></script>
+  <script src="/search/jquery.camelhunter.min.js"></script>
+  <script type="text/javascript">
+  	$("#search-field").camelHunter({
+	  	onKeyUp 			: true,
+	  	rss: "/feed.xml",
+	  	results   : "#results"
+	  });
+  </script>
 </body>
 </html>
