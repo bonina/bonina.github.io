@@ -14,7 +14,8 @@ sitemap: false
     </div>
     <a class="noa" href='{{ post.url }}'>{% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 3 %}
     {% for item in nutshell limit:2 %}{{ item | append: '.' }}{% endfor %}
-    {% for item in nutshell offset:2 limit:1 %}{{ item }}{% endfor %}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
+    {% for item in nutshell offset:2 limit:1 %}{{ item }}{% endfor %}</a>
+    <a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
   </article>
 {% endfor %}
 
