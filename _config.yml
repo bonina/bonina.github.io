@@ -18,7 +18,7 @@ pages_list:
   Web: '/web'
   Software: '/software'
   Hardware: '/hardware'
-#  About: '/about'
+  Search: '/search'
 
 #plugins:
 #  - jekyll-sitemap
