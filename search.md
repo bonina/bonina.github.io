@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Search
+sitemap: false
 ---
 
 <h1 style=padding-top:3rem;>Search</h1>
