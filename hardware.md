@@ -14,12 +14,9 @@ sitemap: false
     </div>
     {% assign ncut = 250 %}
     {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
-    <a class="noa" href='{{ post.url }}'>{{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
-  
-  {% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 3 %}
-  {% for item in nutshell limit:2 %}{{ item | append: '.' }}{% endfor %}
-  {% for item in nutshell offset:2 limit:1 %}{{ item }}{% endfor %}
-
+    <a class="noa" href='{{ post.url }}'>{% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 3 %}
+    {% for item in nutshell limit:2 %}{{ item | append: '.' }}{% endfor %}
+    {% for item in nutshell offset:2 limit:1 %}{{ item }}{% endfor %}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
   </article>
 {% endfor %}
 
