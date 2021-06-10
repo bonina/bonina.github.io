@@ -20,7 +20,7 @@ pages_list:
   Hardware: '/hardware'
   Search: '/search'
 
-excerpt_separator: '</p>'
+#excerpt_separator: '</p>'
 
 #plugins:
 #  - jekyll-sitemap
