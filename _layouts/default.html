@@ -10,7 +10,27 @@
   </label>
   <ul class="navigation">
     <li class="nav-item-fill" style="height:6rem;"></li>
-    {% if pth == "index.html" %}{% else %}<li class="nav-item"><a class="nohover" href="/">Home</a></li>{% endif %}
+  <noscript>
+    <style type="text/css">
+        .jsback {display:none;}
+    </style>
+    <a href="/"><small>Back to Home</small></a>
+  </noscript>
+  <script>
+    function historyBackFallback(fallbackUrl) {
+    fallbackUrl = fallbackUrl || '/';
+    var prevPage = window.location.href;
+
+    window.history.back();
+
+    setTimeout(function(){ 
+        if (window.location.href == prevPage) {
+            window.location.href = fallbackUrl; 
+        }
+    }, 1000);
+    }
+  </script>
+    <li class="nav-item"><a class="jsback" style="cursor: pointer;" onclick="historyBackFallback()"><small>Back</small></a></li>
     {% for page in site.pages_list %}<li class="nav-item"><a class="nohover" href="{{ page[1] }}">{{ page[0] }}</a></li>{% endfor %}
     <li class="nav-item"><a class="nohover" href="/search">Search</a></li>
     <li class="nav-item-fill fill-all"></li>
