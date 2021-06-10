@@ -20,5 +20,7 @@ pages_list:
   Hardware: '/hardware'
   Search: '/search'
 
+excerpt_separator: '\n\n'
+
 #plugins:
 #  - jekyll-sitemap
