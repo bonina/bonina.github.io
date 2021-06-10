@@ -17,7 +17,7 @@ sitemap: false
     <a class="noa" href='{{ post.url }}'>{{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
 
     {{ post.excerpt }}
-    {{ post.content | remove_first:post.excerpt | split: '<br/><br/>' | first }}
+    {{ post.content | remove_first:post.excerpt | split: '<br/>' | first }}
 
   </article>
 {% endfor %}
