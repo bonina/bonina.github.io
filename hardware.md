@@ -18,12 +18,11 @@ sitemap: false
 
     {% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 1 | remove: '["' | remove: '"]' | append: '.' %}
     {{ nutshell }}
-    10
+    12
   
   {% assign nutshell = post.content | markdownify | strip_html | split: '.' %}
 {% for item in nutshell limit:3 %}{{ item | append: '.' }}{% endfor %}
-{{ nutshell | slice: 0, 3 }}
-  11
+  13
 
   </article>
 {% endfor %}
