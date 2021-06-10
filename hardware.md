@@ -16,14 +16,14 @@ sitemap: false
     {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
     <a class="noa" href='{{ post.url }}'>{{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
 
-    {% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 1 | append: '.' %}
+    {% assign nutshell = post.content | markdownify | strip_html | split: '.' | slice: 0, 1 | remove: '["' | remove: '"]' | append: '.' %}
     {{ nutshell }}
-    8
+    10
   
   {% assign nutshell = post.content | markdownify | strip_html | split: '.' %}
-{% for item in nutshell limit:3 %}{{ append: '.' }}{% endfor %}
+{% for item in nutshell limit:3 %}{{ item | append: '.' }}{% endfor %}
 {{ nutshell | slice: 0, 3 }}
-  9
+  11
 
   </article>
 {% endfor %}
