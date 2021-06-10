@@ -16,8 +16,7 @@ sitemap: false
     {% assign words = post.content | strip_newlines | markdownify | strip_html | truncate: ncut, "" | number_of_words | decrement %}
     <a class="noa" href='{{ post.url }}'>{{ post.content | strip_newlines | markdownify | strip_html | truncatewords: words, " " }}</a><a class="dothvr" href='{{ post.url }}'><span class="dot"></span><span class="dot dotc"></span><span class="dot"></span></a>
 
-    {% assign contcut = post.content | split: '</p>' %}
-    {{ post.content | remove_first: contcut ! split: '</p>' }}
+    {{ post.content | markdownify | strip_html | split: '.' | slice: 0, 1, 2 }}
     2
 
   </article>
