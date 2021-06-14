@@ -5,7 +5,7 @@ description: Clean watchface with hours, minutes, day of the week, day of the mo
 categories: [Software]
 ---
 
-Clean watchface with hours, minutes, day of the week, day of the month, number of steps, battery bar and Bluetooth status. Enjoy!
+Clean, thin font watchface. With hours, minutes, day of the week, day of the month, number of steps, battery bar and Bluetooth status. Enjoy!
 
 [Download .bin](/public/download/thin-neue.bin)
 
