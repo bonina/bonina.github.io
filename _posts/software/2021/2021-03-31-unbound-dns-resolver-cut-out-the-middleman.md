@@ -19,6 +19,7 @@ To create the Unbound configuration file create "example.conf" in the following 
 You can use nano or any other file editor utility to copy and save the content below:
 
 <p class="message">server:<br>
+<br>
 verbosity: 0<br>
 <br>
 interface: 127.0.0.1<br>
@@ -26,54 +27,57 @@ port: 5678<br>
 do-ip4: yes<br>
 do-udp: yes<br>
 do-tcp: yes<br>
-<br>
 do-ip6: no<br>
-<br>
 prefer-ip6: no<br>
 <br>
 root-hints: "/var/lib/unbound/root.hints"<br>
 <br>
 harden-glue: yes<br>
-<br>
+harden-large-queries: yes<br>
 harden-dnssec-stripped: yes<br>
-<br>
 harden-algo-downgrade: yes<br>
-<br>
 harden-referral-path: no<br>
+harden-short-bufsize: yes<br>
 <br>
+rrset-roundrobin: yes<br>
 unwanted-reply-threshold: 10000000<br>
 <br>
 hide-identity: yes<br>
-<br>
 hide-version: yes<br>
-<br>
-identity: "DNS"<br>
+identity: "Server"<br>
 <br>
 deny-any: yes<br>
-<br>
+do-daemonize: no<br>
 minimal-responses: yes<br>
-<br>
 use-caps-for-id: no<br>
 <br>
-edns-buffer-size: 1472<br>
-<br>
 prefetch: yes<br>
-<br>
 prefetch-key: yes<br>
-<br>
-cache-min-ttl: 600<br>
-cache-max-ttl: 21600<br>
-<br>
-msg-cache-size: 128m<br>
-rrset-cache-size: 256m<br>
+cache-min-ttl: 300<br>
+cache-max-ttl: 28800<br>
+serve-expired: no<br>
+msg-cache-size: 50m<br>
+rrset-cache-size: 100m<br>
+edns-buffer-size: 1472<br>
+so-rcvbuf: 4m<br>
+so-sndbuf: 4m<br>
+neg-cache-size: 4m<br>
 <br>
 so-reuseport: yes<br>
-<br>
 qname-minimisation: yes<br>
+val-clean-additional: yes<br>
 <br>
 num-threads: 1<br>
+msg-cache-slabs: 1<br>
+rrset-cache-slabs: 1<br>
+infra-cache-slabs: 1<br>
+key-cache-slabs: 1<br>
 <br>
-so-rcvbuf: 1m<br>
+log-queries: no<br>
+log-replies: no<br>
+log-servfail: no<br>
+log-local-actions: no<br>
+logfile: /dev/null<br>
 <br>
 private-address: 192.168.0.0/16<br>
 private-address: 169.254.0.0/16<br>
