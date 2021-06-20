@@ -113,7 +113,7 @@ Add this line in the end of the prompt/file and save it:
  
 These steps will schedule an update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
  
-To make sure your device(s) is(are) using your Unbound instance, make the TXT record query bellow:
+To make sure your device(s) is(are) using your Unbound instance, make the TXT record query below:
 
 <p class="message">dig +short TXT whoami.ds.akahelp.net</p>
 
