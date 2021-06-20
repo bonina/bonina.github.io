@@ -113,4 +113,6 @@ Add this line in the end of the prompt/file and save it:
  
 These steps will schedule an update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
  
+To make sure your device(s) is(are) using your Unbound instance, resolve the address "whoami.akamai.net". You should get your IP if the Unbound instance is local, or your VPS IP if in the cloud. If not, your device is not using your Unbound resolver but some other DNS provider. Check your network/device for DNS leaks.
+
 Optional step: Paired with pi-hole or AdGuardHome, you can add an extra layer between you and the resolver, filtering nefarious domains.
