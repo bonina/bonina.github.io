@@ -117,9 +117,13 @@ Add this line in the end of the prompt/file and save it:
  
 These steps will schedule an update of your root.hints at 4 AM every 1st of February and July, and restart the Unbound service to apply the changes.
  
-To make sure your device(s) is(are) using your Unbound instance, make the TXT record query below:
+To make sure your device(s) is(are) using your Unbound instance, make the TXT record query below.
 
+On Unix:
 <p class="message">dig +short TXT whoami.ipv4.akahelp.net</p>
+
+On Windows:
+<p class="message">nslookup -type=TXT whoami.ipv4.akahelp.net</p>
 
 In the non-authoritative answer, the "ns" record is the unicast IP address of the requesting recursive resolver. You should get your IP if the Unbound instance is local, or your VPS IP if in the cloud. If not, your device is not using your Unbound resolver but some other DNS provider. Check your network/device for DNS leaks.
 
