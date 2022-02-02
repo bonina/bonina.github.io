@@ -5,18 +5,18 @@ categories: [Software]
 #date: 2021-03-31
 ---
 
-Why be exposed to privacy risks by using public DNS servers when you can have your own proper validating, recursive, caching DNS resolver? In the following guide we will install and configure our own instance of a popular DNS resolver. We will use Unbound from NLnet Labs on a Debian based linux distro, but you can use this same configuration file across kernels and other supported operating systems.
+In the following guide we will install and configure our own instance of a validating, recursive, caching DNS resolver. We will opt for Unbound from NLnet Labs on a Debian based linux distro, but this same configuration can be used across kernels and other supported operating systems.
  
-To install, open the terminal and paste the following command:
+To proceed, open a terminal window and paste the following command:
  
 <p class="message">sudo apt install unbound</p>
  
-Some error messages may appear. Since there is no configuration file present, Unbound will not be able to start.
-To create the Unbound configuration file create "example.conf" in the following directory:
+Some error messages may appear, since there is no configuration file present and Unbound will not be able to start.
+To proceed in generating the Unbound configuration file, create "example.conf" in the following directory:
  
 <p class="message">/etc/unbound/unbound.conf.d/</p>
  
-You can use nano or any other file editor utility to copy and save the content below:
+You can use <i>nano</i> or any other file editor to copy and save the content below:
 
 <p class="message">server:<br>
 <br>
@@ -126,5 +126,3 @@ On Windows:
 <p class="message">nslookup -type=TXT whoami.ipv4.akahelp.net</p>
 
 In the non-authoritative answer, the "ns" record is the unicast IP address of the requesting recursive resolver. You should get your IP if the Unbound instance is local, or your VPS IP if in the cloud. If not, your device is not using your Unbound resolver but some other DNS provider. Check your network/device for DNS leaks.
-
-<i>Optional step: Paired with pi-hole or AdGuardHome, you can add an extra layer between you and the resolver, filtering nefarious domains.</i>
