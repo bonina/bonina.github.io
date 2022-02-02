@@ -2,4 +2,4 @@
 Website
 
 ## License
-Copyright (C) Bonina
+Copyright &copy; {{ 'now' | date: '%Y' }} Bonina
