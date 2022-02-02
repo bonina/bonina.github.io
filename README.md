@@ -2,4 +2,4 @@
 Website
 
 ## License
-Copyright &copy; {{ 'now' | date: '%Y' }} Bonina
+Copyright &copy; 2017-2022 Bonina
