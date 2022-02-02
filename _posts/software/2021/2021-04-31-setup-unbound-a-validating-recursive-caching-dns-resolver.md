@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Unbound DNS resolver? Cut out the middleman!
+title: Setup Unbound: a validating, recursive, caching DNS resolver
 categories: [Software]
-#date: 2021-03-31
+#date: 2021-04-31
 ---
 
 In the following guide we will install and configure our own instance of a validating, recursive, caching DNS resolver. We will opt for Unbound from NLnet Labs on a Debian based linux distro, but this same configuration can be used across kernels and other supported operating systems.
