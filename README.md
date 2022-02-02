@@ -2,4 +2,4 @@
 Website
 
 ## License
-Copyright &copy; 2017-2022 Bonina
+Copyright &copy; 2022 Bonina
