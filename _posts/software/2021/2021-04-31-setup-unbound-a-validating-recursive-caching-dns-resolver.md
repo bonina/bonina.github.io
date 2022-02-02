@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Unbound: a validating, recursive, caching DNS resolver
+title: Setup Unbound&#58; a validating, recursive, caching DNS resolver
 categories: [Software]
 #date: 2021-04-31
 ---
