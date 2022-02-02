@@ -11,7 +11,7 @@ To proceed, open a terminal window and paste the following command:
  
 <p class="message">sudo apt install unbound</p>
  
-Some error messages may appear, since there is no configuration file present and Unbound will not be able to start.
+During the installation process some error messages may appear. This is normal since there is no configuration file present in the system and thus Unbound will not be able to start.
 To proceed in generating the Unbound configuration file, create "example.conf" in the following directory:
  
 <p class="message">/etc/unbound/unbound.conf.d/</p>
