@@ -1,1 +1,5 @@
-# https://bonina.eu/ Website
+# https://bonina.eu/
+Website
+
+## License
+Copyright (C) Bonina
