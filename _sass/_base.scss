@@ -34,7 +34,7 @@ html {
   padding:0;
 }
 
-* {
+* :not(.dothvr) {
   overflow-x: hidden;
 }
 
