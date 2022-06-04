@@ -27,7 +27,7 @@ echo. & echo WUpdate cache cleanup in progress... & (del /S /Q /F "C:\Windows\So
 echo.
 echo.
 echo ==========================================
-echo  ALL Unnecessary files sucessfuly removed
+echo  ALL unnecessary files sucessfuly removed
 echo ==========================================
 :continue
 echo.
