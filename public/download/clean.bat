@@ -2,7 +2,7 @@
 echo =====================================
 echo  Unnecessary files removal tool v1.1
 echo  for Windows 7/8/10/11
-::    @bonina.eu
+::    bonina.eu
 echo =====================================
 echo.
 
