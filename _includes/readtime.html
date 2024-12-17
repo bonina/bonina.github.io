@@ -6,20 +6,20 @@
   {% assign nwords = content | strip_newlines | markdownify | strip_html | number_of_words | decrement %}
   {% endif %}
   {% if lpth == "web.md" or lpth == "software.md" or lpth == "hardware.md" %}
-  {% if nwords < 90 %}
+  {% if nwords < 50 %}
   Less than 1 min read
-  {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
+  {% elsif nwords == 50 or nwords > 50 and nwords < 100 %}
   1 min read
   {% else %}
-  {{ nwords | divided_by:90 }} mins read
+  {{ nwords | divided_by:50 }} mins read
   {% endif %}
   {% else %}
-  {% if nwords < 90 %}
+  {% if nwords < 50 %}
   &middot;&nbsp;less than 1 min read
-  {% elsif nwords == 90 or nwords > 90 and nwords < 180 %}
+  {% elsif nwords == 50 or nwords > 50 and nwords < 100 %}
   &middot;&nbsp;1 min read
   {% else %}
-  &middot;&nbsp;{{ nwords | divided_by:90 }} mins read
+  &middot;&nbsp;{{ nwords | divided_by:50 }} mins read
   {% endif %}
   {% endif %}
 </span>
