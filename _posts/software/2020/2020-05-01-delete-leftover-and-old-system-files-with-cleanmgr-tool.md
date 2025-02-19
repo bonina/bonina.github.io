@@ -23,4 +23,4 @@ This process may take some time to complete, especially on systems with consider
 
 As an alternative, there is a simple script that concatenates the above and additional native tools/commands with the goal of further minimizing the size of the WinSxS folder. This will further uninstall and delete packages with components that have been replaced by newer versions. Previous versions of some components are kept on the system for a period of time, allowing you to rollback if necessary. After successful updates, these older components can be safely removed.
 
-[Download cleanup script for Windows(R) 7/8/10/11 here](https://github.com/bonina/cleanupscript/raw/refs/heads/main/Cleanup.bat)
+[Download cleanup script here](https://github.com/bonina/cleanupscript)
