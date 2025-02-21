@@ -12,7 +12,7 @@ To proceed, open a terminal window and paste the following command:
 <p class="message">sudo apt install unbound</p>
  
 During the installation process some error messages may appear. This is normal since there is no configuration file present in the system and thus Unbound will not be able to start.
-To proceed in generating the Unbound configuration file, create "example.conf" in the following directory:
+To proceed in generating the Unbound configuration file, create "unbound.conf" in the following directory:
  
 <p class="message">/etc/unbound/unbound.conf.d/</p>
  
@@ -21,6 +21,7 @@ You can use <i>nano</i> or any other file editor to copy and save the content be
 <p class="message">server:<br>
 <br>
 verbosity: 0<br>
+statistics-interval: 0<br>
 <br>
 interface: 127.0.0.1<br>
 port: 5678<br>
@@ -31,6 +32,7 @@ do-ip6: no<br>
 prefer-ip6: no<br>
 <br>
 root-hints: "/var/lib/unbound/root.hints"<br>
+target-fetch-policy: "0 0 0 0 0"<br>
 <br>
 harden-glue: yes<br>
 harden-large-queries: yes<br>
@@ -40,11 +42,15 @@ harden-referral-path: no<br>
 harden-short-bufsize: yes<br>
 <br>
 rrset-roundrobin: yes<br>
-unwanted-reply-threshold: 10000000<br>
+unwanted-reply-threshold: 0<br>
 <br>
 hide-identity: yes<br>
 hide-version: yes<br>
 identity: "Server"<br>
+<br>
+ratelimit: 1000<br>
+do-not-query-localhost: yes<br>
+delay-close: 10000<br>
 <br>
 deny-any: yes<br>
 do-daemonize: no<br>
@@ -58,7 +64,7 @@ cache-max-ttl: 28800<br>
 serve-expired: no<br>
 msg-cache-size: 50m<br>
 rrset-cache-size: 100m<br>
-edns-buffer-size: 1472<br>
+edns-buffer-size: 1232<br>
 so-rcvbuf: 4m<br>
 so-sndbuf: 4m<br>
 neg-cache-size: 4m<br>
@@ -67,11 +73,11 @@ so-reuseport: yes<br>
 qname-minimisation: yes<br>
 val-clean-additional: yes<br>
 <br>
-num-threads: 1<br>
-msg-cache-slabs: 1<br>
-rrset-cache-slabs: 1<br>
-infra-cache-slabs: 1<br>
-key-cache-slabs: 1<br>
+num-threads: 4 #Set equal to the number of CPU cores on the system<br>
+msg-cache-slabs: 2 #Set to a power of 2 close to the num-threads value<br>
+rrset-cache-slabs: 2 #Set to a power of 2 close to the num-threads value<br>
+infra-cache-slabs: 2 #Set to a power of 2 close to the num-threads value<br>
+key-cache-slabs: 2 #Set to a power of 2 close to the num-threads value<br>
 <br>
 log-queries: no<br>
 log-replies: no<br>
@@ -84,7 +90,19 @@ private-address: 169.254.0.0/16<br>
 private-address: 172.16.0.0/12<br>
 private-address: 10.0.0.0/8<br>
 private-address: fd00::/8<br>
-private-address: fe80::/10</p>
+private-address: fe80::/10<br>
+<br>
+access-control: 0.0.0.0/0 refuse<br>
+access-control: 10.0.0.0/8 allow<br>
+access-control: 127.0.0.1/8 allow<br>
+access-control: 172.16.0.0/12 allow<br>
+access-control: 192.168.0.0/16 allow<br>
+access-control: ::/0 refuse<br>
+access-control: ::1/128 allow<br>
+access-control: fd00::/8 allow<br>
+access-control: fe80::/10 allow</p>
+
+Further infomation about each entry please see [NLnet Labs Documentation - Unbound](https://nlnetlabs.nl/documentation/unbound/unbound.conf/).
 
 Next step will be to pull the root.hints file from the domain authority for the first time. Execute these two separate commands:
  
