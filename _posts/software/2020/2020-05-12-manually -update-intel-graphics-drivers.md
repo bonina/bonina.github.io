@@ -5,7 +5,7 @@ categories: [Software]
 published: true
 ---
 
-The release timeline and availability of drivers in the Windows' update catalog is usually slow as snails, sometimes even lacking altogether. Remarkably Microsoft's own devices are not immune to this. For example, the Surface Go 1 was released back in August 2018 but only in December 2019 saw its first Intel's graphics drivers update automatically pushed by Windows Update. Updates with associated optimizations are especially crucial to a device that has a more limited CPU and that greatly benefits from improvements to its integrated GPU that can and will properly hardware accelerate 4K video from popular sources (YouTube/Netflix/local video files) offloading the CPU (since by itself is unable to, in a case of software acceleration).
+The release timeline and availability of drivers in the Windows' update catalog is usually slow as snails, sometimes even lacking altogether. Remarkably Microsoft's own devices are not immune to this. For example, the Surface Go 1 was released back in August 2018 but only in December 2019 saw its first Intel's graphics drivers update automatically pushed by Windows Update. Updates with associated optimizations are especially crucial to devices that have a more limited CPU, specially the ones that greatly depend from its integrated GPUs to properly accelerate 4K video from popular sources (YouTube/Netflix/local video files) offloading resources.
 
 In the meantime, Intel released countless public updates for that particular iGPU (HD 615) to the rate of approximately once every 2/3 months, fixing bugs, improving the package optimization for newly released software, and even new features such as a completely new Graphics Command Center built from the ground up.
 
@@ -13,7 +13,7 @@ It's staggering that for this particular case, the majority of clients with such
 
 Albeit not perfect, there is a little hack. Blocking any changes to drivers associated with specific PCI/IDs. The examples below are for the Surface Go 1, but you can adapt them to other devices by changing the corresponding PCI/IDs related to your GPU (use the Device Manager - Display adapters - double click above your GPU - Details tab - Property dropdown and choose Hardware IDs - copy the entry without REV, usually the 2nd one).
 
-First, make sure that you disable your internet connection (disconnect WiFi/Ethernet). Then navigate to the path "C:\Windows\SoftwareDistribution\Download" and delete any of its contents. Allow the administrative popup when it appears. Proceed to install the most recent drivers available at Intel's website [Intel Download Center](https://downloadcenter.intel.com/product/96554/Intel-HD-Graphics-615). Reboot when asked.
+First, make sure that you disable your internet connection (disconnect WiFi/Ethernet). Then navigate to the path "C:\Windows\SoftwareDistribution\Download" and delete any of its contents. Allow the administrative popup when it appears. Proceed to install the most recent drivers available at Intel's website [Intel Download Center](https://downloadcenter.intel.com/). Reboot when asked.
 
 Before enabling the internet access again, open Notepad, add and save the contents below. Give the .reg extension.
 
