@@ -29,7 +29,7 @@ Before enabling the internet access again, open Notepad, add and save the conten
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Restrictions\DenyDeviceIDs]<br>
 "1"="PCI\\VEN_8086&DEV_591E&SUBSYS_1182152D"</p>
 
-These entries will block ANY attempt to change the iGPU driver in this particular setup, even with drivers that Windows Update tries to forcefully update (usually older ones). To adapt to your specific hardware, change the PCI/IDs entries ("1"="**PCI\\VEN_8086&DEV_591E&SUBSYS_1182152D**") for the ones attributed to your GPU (use the Device Manager - Display adapters - double click above your GPU - Details tab - Property dropdown and choose Hardware IDs - copy the entry without REV, usually the 2nd one).
+These entries will block ANY attempt to change the iGPU driver in this particular setup, even with drivers that Windows Update tries to forcefully update (usually older ones). To adapt to your specific hardware, change the PCI/IDs entries (**PCI\\VEN_8086&DEV_591E...**) for the ones attributed to your GPU (use the Device Manager - Display adapters - double click above your GPU - Details tab - Property dropdown and choose Hardware IDs - copy the entry without REV, usually the 2nd one).
 
 When the time to manually update for a newer one comes, you just need to temporarily disable those entries. Make another .reg file with the contents below, and run it when you need to install the newer drivers. Also, repeat the steps above, specifically disabling the internet access and then clearing the contents of the folder "C:\Windows\SoftwareDistribution\Download".
 
