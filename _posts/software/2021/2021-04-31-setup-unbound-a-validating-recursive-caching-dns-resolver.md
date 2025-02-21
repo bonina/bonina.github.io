@@ -73,7 +73,7 @@ so-reuseport: yes<br>
 qname-minimisation: yes<br>
 val-clean-additional: yes<br>
 <br>
-#Set equal to the number of CPU cores on the system
+#Set equal to the number of CPU cores on the system<br>
 num-threads: 4<br>
 #Set *-slabs to a power of 2 close to the num-threads value<br>
 msg-cache-slabs: 2<br>
